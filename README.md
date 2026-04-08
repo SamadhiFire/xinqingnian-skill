@@ -317,57 +317,57 @@ mindmap
 **1. 封面与总判断**  
 先用一屏把问题场景、阶段、服务对象和当前推荐路线压住。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-01-cover.png" alt="封面与总判断" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-01-cover.png" alt="封面与总判断" width="80%">
 </p>
 
 **2. 关系图模块**  
 先看谁影响谁、谁卡谁、谁依赖谁，再进入路线判断。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-02-relation-graph.png" alt="关系图模块" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-02-relation-graph.png" alt="关系图模块" width="80%">
 </p>
 
 **3. 建议路线区**  
 把当前主路线、成立前提、支点和关键动作压成一屏。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-03-main-route.png" alt="建议路线区" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-03-main-route.png" alt="建议路线区" width="80%">
 </p>
 
 **4. 下一步行动与证据链**  
 一边给出近期动作和观察点，一边交代“为什么这样判断”。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-04-actions-evidence.png" alt="下一步行动与证据链" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-04-actions-evidence.png" alt="下一步行动与证据链" width="80%">
 </p>
 
 **5. 控制点分布表**  
 把名义归属和现实掌握方拆开，说明谁在改写口径、责任和边界。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-05-control-points.png" alt="控制点分布表" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-05-control-points.png" alt="控制点分布表" width="80%">
 </p>
 
 **6. 人物与关系清单**  
 补充各方诉求、态度、依赖和合作边界，不让关系图只停在“谁连着谁”。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-06-people-details.png" alt="人物与关系清单" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-06-people-details.png" alt="人物与关系清单" width="80%">
 </p>
 
 **7. 结构拆解与路线比较**  
 把主次问题拆开，再把几条路线放在一起比较，不让判断停在一句口号上。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-07-structure-routes.png" alt="结构拆解与路线比较" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-07-structure-routes.png" alt="结构拆解与路线比较" width="80%">
 </p>
 
 **8. 方法出处与结论压缩**  
 最后交代这份判断是从哪些方法来的，并用一句话收住结论。
 
-<p align="center">
-  <img src="./examples/screenshots/sample-org-fork-08-method-sources.png" alt="方法出处与结论压缩" width="88%">
+<p align="left">
+  <img src="./examples/screenshots/sample-org-fork-08-method-sources.png" alt="方法出处与结论压缩" width="80%">
 </p>
 
 #### 完整版
