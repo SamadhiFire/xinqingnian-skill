@@ -343,7 +343,10 @@ git clone https://github.com/SamadhiFire/maozedong-maoxuan-skill.git ~/.codex/sk
 **霸气地告诉你的Agent！：**
 
 ```bash
-帮我安装这个skill：https://github.com/SamadhiFire/maozedong-maoxuan-skill?tab=readme-ov-file
+请帮我接入这个 skill：
+https://github.com/SamadhiFire/maozedong-maoxuan-skill
+
+按 README 进行安装；如果当前平台不支持 skill，就转换成自定义规则。
 ```
 
 ## 仓库结构
