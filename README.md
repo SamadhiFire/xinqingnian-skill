@@ -70,25 +70,31 @@
 > **先问清，再拆局；先定线，再交付。**
 
 ```mermaid
-flowchart TB
+flowchart LR
     A["四步工作法"]:::root
 
-    A --> B["01 先问清"]:::stageGold
-    B --> B1["目标 / 事件 / 人物 / 尝试 / 约束"]:::leafCream
-    B --> B2["先补齐关键结构"]:::leafCream
-    B --> B3["主问题锚点 / 原始问题对照 / 案件工作单"]:::leafCream
+    B["01 先问清"]:::stageGold
+    C["02 再拆局"]:::stageRed
+    D["03 后定路线"]:::stageBrown
+    E["04 再交付"]:::stageGold
 
-    A --> C["02 再拆局"]:::stageRed
-    C --> C1["矛盾 / 阶段 / 力量 / 风险"]:::leafWarm
-    C --> C2["先看清局面怎么卡住"]:::leafWarm
-    C --> C3["再判断真正的主问题"]:::leafWarm
+    B1["目标 / 事件 / 人物 / 尝试 / 约束"]:::leafCream --> B
+    B2["先补齐关键结构"]:::leafCream --> B
+    B3["主问题锚点 / 原始问题对照 / 案件工作单"]:::leafCream --> B
 
-    A --> D["03 后定路线"]:::stageBrown
+    C1["矛盾 / 阶段 / 力量 / 风险"]:::leafWarm --> C
+    C2["先看清局面怎么卡住"]:::leafWarm --> C
+    C3["再判断真正的主问题"]:::leafWarm --> C
+
+    B --> A
+    C --> A
+    A --> D
+    A --> E
+
     D --> D1["路线 / 顺序 / 边界 / 动作"]:::leafRose
     D --> D2["不是空讲方向"]:::leafRose
     D --> D3["而是排出先后手和边界线"]:::leafRose
 
-    A --> E["04 再交付"]:::stageGold
     E --> E1["文字分析 / HTML 报告"]:::leafCream
     E --> E2["落成可直接使用的成品"]:::leafCream
     E --> E3["能复看 / 能转发 / 能继续推进"]:::leafCream
@@ -100,6 +106,7 @@ flowchart TB
     classDef leafCream fill:#f7f1e7,color:#5a120d,stroke:#d8c7a3,stroke-width:1px;
     classDef leafWarm fill:#f6e2b8,color:#5a120d,stroke:#d8c7a3,stroke-width:1px;
     classDef leafRose fill:#f3ddd6,color:#5a120d,stroke:#d8c7a3,stroke-width:1px;
+    linkStyle default stroke:#b6492d,stroke-width:1.6px;
 ```
 
 一句话：
