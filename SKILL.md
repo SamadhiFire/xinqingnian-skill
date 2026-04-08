@@ -321,8 +321,7 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 
 可直接参考两个现成示例：
 
-- [sample-project-report.html](./examples/sample-project-report.html)
-- [sample-org-fork-case.md](./examples/sample-org-fork-case.md) 和 [sample-org-fork-case-report.html](./examples/sample-org-fork-case-report.html)
+- [组织分叉案例输入.md](./examples/组织分叉案例输入.md) 和 [组织分叉案例报告.html](./examples/组织分叉案例报告.html)
 
 HTML 输出要求如下：
 
