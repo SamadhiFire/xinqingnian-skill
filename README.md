@@ -232,7 +232,7 @@ git clone https://github.com/SamadhiFire/maozedong-maoxuan-skill.git ~/.codex/sk
 我已经做过的尝试：
 我的现实约束：
 
-先别急着下结论，如果信息不够请先追问我。
+先别急着下结论，如果信息不够请先追问我。最后帮我输出一份HTML报告。
 ```
 
 ## 输出结果
@@ -259,7 +259,57 @@ git clone https://github.com/SamadhiFire/maozedong-maoxuan-skill.git ~/.codex/sk
 - 控制点分布
 - 执行计划
 
-可参考示例：[`examples/sample-project-report.html`](./examples/sample-project-report.html)
+这类报告不是把长文原样搬进网页，而是把“核心判断 -> 关系结构 -> 建议路线 -> 证据与控制点 -> 方法出处”排成一份可以直接复看和转发的单文件成品。
+
+如果你准备把截图一起放进仓库，建议统一放在 `examples/screenshots/`。  
+下面这组预览只展示几个关键模块，不追求完整，只负责让人一眼看出这份 HTML 报告是什么样子。
+
+#### 报告预览
+
+**1. 封面与总判断**  
+先用一屏把问题场景、阶段、服务对象和当前推荐路线压住。
+
+<!-- ![封面与总判断](./examples/screenshots/sample-org-fork-01-cover.png) -->
+
+**2. 关系图模块**  
+先看谁影响谁、谁卡谁、谁依赖谁，再进入路线判断。
+
+<!-- ![关系图模块](./examples/screenshots/sample-org-fork-02-relation-graph.png) -->
+
+**3. 建议路线区**  
+把当前主路线、成立前提、支点和关键动作压成一屏。
+
+<!-- ![建议路线区](./examples/screenshots/sample-org-fork-03-main-route.png) -->
+
+**4. 下一步行动与证据链**  
+一边给出近期动作和观察点，一边交代“为什么这样判断”。
+
+<!-- ![下一步行动与证据链](./examples/screenshots/sample-org-fork-04-actions-evidence.png) -->
+
+**5. 控制点分布表**  
+把名义归属和现实掌握方拆开，说明谁在改写口径、责任和边界。
+
+<!-- ![控制点分布表](./examples/screenshots/sample-org-fork-05-control-points.png) -->
+
+**6. 人物与关系清单**  
+补充各方诉求、态度、依赖和合作边界，不让关系图只停在“谁连着谁”。
+
+<!-- ![人物与关系清单](./examples/screenshots/sample-org-fork-06-people-details.png) -->
+
+**7. 结构拆解与路线比较**  
+把主次问题拆开，再把几条路线放在一起比较，不让判断停在一句口号上。
+
+<!-- ![结构拆解与路线比较](./examples/screenshots/sample-org-fork-07-structure-routes.png) -->
+
+**8. 方法出处与结论压缩**  
+最后交代这份判断是从哪些方法来的，并用一句话收住结论。
+
+<!-- ![方法出处与结论压缩](./examples/screenshots/sample-org-fork-08-method-sources.png) -->
+
+#### 完整版
+
+- 复杂组织分叉案例：[`examples/sample-org-fork-case-report.html`](./examples/sample-org-fork-case-report.html)
+- 轻量项目案例：[`examples/sample-project-report.html`](./examples/sample-project-report.html)
 
 ## 边界
 
@@ -282,6 +332,7 @@ maozedong-maoxuan-skill/
 ├── SKILL.md                         # 主入口
 ├── references/                      # 分类、澄清、方法、风险、输出规则
 ├── examples/sample-project-report.html
+├── examples/screenshots/            # README 预览截图建议放这里
 ├── distill/                         # 蒸馏材料
 └── source-texts/                    # 原始文本
 ```

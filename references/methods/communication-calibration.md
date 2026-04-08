@@ -1,6 +1,6 @@
-﻿# 沟通策略、表达治理、证据链与合法性争夺
+# 沟通策略、表达治理、证据链与合法性争夺
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 表达不是包装，而是组织判断、对象争取和公共标准建设的一部分；要按对象、证据、时机、程序和公共后果来设计说法与口径，让它真正服务行动、争取中间层并守住合法性。
 

@@ -1,6 +1,6 @@
-﻿# 调查研究、对象校准与服务对象识别
+# 调查研究、对象校准与服务对象识别
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 在分析、表达和行动之前，先把真实对象、真实处境、真实结构、真实服务对象和最小证据入口校准清楚，再进入后续判断。
 

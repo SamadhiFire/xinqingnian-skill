@@ -1,6 +1,6 @@
-﻿# 执行路线、政策重写、组织换挡与复杂 rollout
+# 执行路线、政策重写、组织换挡与复杂 rollout
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 把已经形成的判断翻成可承接的动作链、规则链和组织链，让中心工作、政策口径、接管顺序、班子工艺和 rollout 分区真正接起来。
 

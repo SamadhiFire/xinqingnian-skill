@@ -1,6 +1,6 @@
-﻿# 实践检验、开放纠偏、收口复判与阶段复盘
+# 实践检验、开放纠偏、收口复判与阶段复盘
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 把行动结果重新变成判断输入，在纠偏中保住队伍、修正路线，并在收口、转段或接管后重新判断下一轮怎么走。
 

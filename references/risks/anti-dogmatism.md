@@ -1,4 +1,6 @@
-﻿# “反对本本主义”翻译护栏
+# “反对本本主义”翻译护栏
+
+[返回总入口](../../SKILL.md) · [风险路由](../routing/confidence-rules.md) · [误用边界入口](./misuse-boundaries.md) · [表达红线入口](./translation-red-lines.md)
 
 ## 这句话什么时候可用
 

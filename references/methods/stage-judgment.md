@@ -1,6 +1,6 @@
-﻿# 阶段判断、转段识别与前途分叉/收口判断
+# 阶段判断、转段识别与前途分叉/收口判断
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 先判断当前处在什么阶段、正在往哪个阶段过渡、会向哪几条路分叉，再决定中心任务、节奏、主战场、政策沿用范围、收口时机和组织角色是否需要换挡。
 

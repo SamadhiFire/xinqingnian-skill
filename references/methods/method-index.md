@@ -1,4 +1,6 @@
-﻿# 方法入口索引
+# 方法入口索引
+
+[返回总入口](../../SKILL.md) · [问题分类](../categories/problem-taxonomy.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 ## 用途说明
 

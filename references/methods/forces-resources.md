@@ -1,6 +1,6 @@
-﻿# 力量对比、支点建设、底盘供给与资源配置
+# 力量对比、支点建设、底盘供给与资源配置
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 在资源有限、多线压力并存的局面里，先看清力量对比与供给约束，选出可守、可长、可供给的支点和底盘，再把资源压到能改写局面的关键节点，而不是平均铺开。
 

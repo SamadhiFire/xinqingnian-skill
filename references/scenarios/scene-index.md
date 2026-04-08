@@ -1,4 +1,6 @@
-﻿# 场景入口索引
+# 场景入口索引
+
+[返回总入口](../../SKILL.md) · [问题分类](../categories/problem-taxonomy.md) · [方法索引](../methods/method-index.md) · [模糊输入识别](../clarification/ambiguity-gate.md)
 
 ## 用途说明
 

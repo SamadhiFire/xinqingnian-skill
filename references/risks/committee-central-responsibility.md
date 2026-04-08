@@ -1,4 +1,6 @@
-﻿# “党委制 / 一元化负责”使用护栏
+# “党委制 / 一元化负责”使用护栏
+
+[返回总入口](../../SKILL.md) · [风险路由](../routing/confidence-rules.md) · [误用边界入口](./misuse-boundaries.md) · [表达红线入口](./translation-red-lines.md)
 
 ## 这组表达什么时候可用
 

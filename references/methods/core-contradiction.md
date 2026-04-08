@@ -1,6 +1,6 @@
-﻿# 主要矛盾、结构诊断与控制点识别
+# 主要矛盾、结构诊断与控制点识别
 
-> 返回索引：[method-index.md](./method-index.md)
+[返回总入口](../../SKILL.md) · [方法索引](./method-index.md) · [场景索引](../scenarios/scene-index.md) · [风险路由](../routing/confidence-rules.md)
 
 面对多问题并存的复杂局面，先做结构诊断，找出当前最限制结果的主导性矛盾及其主导方面，并区分纸面关系、名义安排和现实控制点，再据此决定任务顺序和行动重点。
 

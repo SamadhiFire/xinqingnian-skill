@@ -1,6 +1,6 @@
-﻿# 生活决策与资源取舍
+# 生活决策与资源取舍
 
-[返回场景索引](./scene-index.md)
+[返回总入口](../../SKILL.md) · [场景索引](./scene-index.md) · [问题分类](../categories/problem-taxonomy.md) · [方法索引](../methods/method-index.md)
 
 ## 一、文件作用
 
