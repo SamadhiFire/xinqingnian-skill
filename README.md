@@ -2,7 +2,7 @@
 
 <h1>毛选拆局.skill</h1>
 
-<p><em>“最近大家都在蒸馏各种 skill。蒸馏的最终目的，是要<strong>能够解决问题！</strong>”</em></p>
+<p><em>“最近大家都在蒸馏各种 skill。但，蒸馏的最终目的，是要<strong>能够解决问题！</strong>”</em></p>
 
 <p>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
@@ -22,7 +22,7 @@
 
 <br>
 
-<p>你可以把他理解成，把<strong>“新中国最会解决问题的那种脑子”</strong>请来，当一次临时参谋。</p>
+<p>你可以把他理解成，把<strong>“新中国最会解决问题的脑子”</strong>请来，当一次“临时参谋”。</p>
 
 <br>
 
