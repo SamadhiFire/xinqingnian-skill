@@ -225,7 +225,13 @@ flowchart TB
 
 下面这组预览只展示几个关键模块，不追求完整，只负责让人一眼看出这份 HTML 报告是什么样子。
 
-#### 报告预览
+
+#### 示例报告完整版
+
+- 复杂组织分叉案例输入：[`examples/组织分叉案例输入.md`](./examples/组织分叉案例输入.md)
+- 复杂组织分叉案例：[`examples/组织分叉案例报告.html`](./examples/组织分叉案例报告.html)
+
+#### 示例报告预览
 
 **1. 封面与总判断**  
 先用一屏把问题场景、阶段、服务对象和当前推荐路线压住。
@@ -283,10 +289,6 @@ flowchart TB
   <img src="./examples/screenshots/sample-org-fork-08-method-sources.png" alt="方法出处与结论压缩" width="80%">
 </p>
 
-#### 完整版
-
-- 复杂组织分叉案例输入：[`examples/组织分叉案例输入.md`](./examples/组织分叉案例输入.md)
-- 复杂组织分叉案例：[`examples/组织分叉案例报告.html`](./examples/组织分叉案例报告.html)
 
 ## 边界
 
