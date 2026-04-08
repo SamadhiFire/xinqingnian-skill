@@ -1,0 +1,7 @@
+interface:
+  display_name: "毛选方法分析"
+  short_description: "用《毛选》方法分析工作、关系、决策等结构性问题"
+  default_prompt: "Use $mao-method-skill to analyze this situation with clarification first, then give a structured judgment or HTML report."
+
+policy:
+  allow_implicit_invocation: true
