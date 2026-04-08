@@ -67,44 +67,28 @@
 
 > **先问清，再拆局；先定线，再交付。**
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-
-**01 先问清**  
-目标 / 事件 / 人物 / 尝试 / 约束
-
-先把关键结构补齐；长问题先做主问题锚点、原始问题对照和案件工作单，不拿猜测硬顶结论。
-
-  </td>
-    <td width="50%" valign="top">
-
-**02 再拆局**  
-矛盾 / 阶段 / 力量 / 风险
-
-先看清局面怎么卡住，再判断真正的主问题。
-
-  </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-
-**03 后定路线**  
-路线 / 顺序 / 边界 / 动作
-
-不是空讲方向，而是排出先后手和边界线。
-
-  </td>
-    <td width="50%" valign="top">
-
-**04 再交付**  
-文字分析 / HTML 报告
-
-把判断落成能直接拿去用、能复看、能转发的成品。
-
-  </td>
-  </tr>
-</table>
+```mermaid
+mindmap
+  root((四步工作法))
+    01 先问清
+      目标 / 事件 / 人物 / 尝试 / 约束
+      先补齐关键结构
+      主问题锚点
+      原始问题对照
+      案件工作单
+    02 再拆局
+      矛盾 / 阶段 / 力量 / 风险
+      先看清局面怎么卡住
+      再判断真正的主问题
+    03 后定路线
+      路线 / 顺序 / 边界 / 动作
+      不是空讲方向
+      而是排出先后手和边界线
+    04 再交付
+      文字分析 / HTML 报告
+      落成可直接使用的成品
+      能复看 / 能转发 / 能继续推进
+```
 
 一句话：
 
@@ -234,42 +218,58 @@
 **1. 封面与总判断**  
 先用一屏把问题场景、阶段、服务对象和当前推荐路线压住。
 
-![封面与总判断](./examples/screenshots/sample-org-fork-01-cover.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-01-cover.png" alt="封面与总判断" width="88%">
+</p>
 
 **2. 关系图模块**  
 先看谁影响谁、谁卡谁、谁依赖谁，再进入路线判断。
 
-![关系图模块](./examples/screenshots/sample-org-fork-02-relation-graph.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-02-relation-graph.png" alt="关系图模块" width="88%">
+</p>
 
 **3. 建议路线区**  
 把当前主路线、成立前提、支点和关键动作压成一屏。
 
-![建议路线区](./examples/screenshots/sample-org-fork-03-main-route.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-03-main-route.png" alt="建议路线区" width="88%">
+</p>
 
 **4. 下一步行动与证据链**  
 一边给出近期动作和观察点，一边交代“为什么这样判断”。
 
-![下一步行动与证据链](./examples/screenshots/sample-org-fork-04-actions-evidence.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-04-actions-evidence.png" alt="下一步行动与证据链" width="88%">
+</p>
 
 **5. 控制点分布表**  
 把名义归属和现实掌握方拆开，说明谁在改写口径、责任和边界。
 
-![控制点分布表](./examples/screenshots/sample-org-fork-05-control-points.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-05-control-points.png" alt="控制点分布表" width="88%">
+</p>
 
 **6. 人物与关系清单**  
 补充各方诉求、态度、依赖和合作边界，不让关系图只停在“谁连着谁”。
 
-![人物与关系清单](./examples/screenshots/sample-org-fork-06-people-details.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-06-people-details.png" alt="人物与关系清单" width="88%">
+</p>
 
 **7. 结构拆解与路线比较**  
 把主次问题拆开，再把几条路线放在一起比较，不让判断停在一句口号上。
 
-![结构拆解与路线比较](./examples/screenshots/sample-org-fork-07-structure-routes.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-07-structure-routes.png" alt="结构拆解与路线比较" width="88%">
+</p>
 
 **8. 方法出处与结论压缩**  
 最后交代这份判断是从哪些方法来的，并用一句话收住结论。
 
-![方法出处与结论压缩](./examples/screenshots/sample-org-fork-08-method-sources.png)
+<p align="center">
+  <img src="./examples/screenshots/sample-org-fork-08-method-sources.png" alt="方法出处与结论压缩" width="88%">
+</p>
 
 #### 完整版
 
@@ -327,19 +327,72 @@ git clone https://github.com/SamadhiFire/maozedong-maoxuan-skill.git ~/.codex/sk
 
 ## 仓库结构
 
-```text
-maozedong-maoxuan-skill/
-├── README.md                        # 项目介绍、安装方式、使用示例和 HTML 预览
-├── LICENSE                          # MIT 许可
-├── SKILL.md                         # Skill 主入口，供 Agent 实际加载
-├── examples/
-│   ├── 组织分叉案例输入.md          # 对外展示的复杂案例输入样例
-│   ├── 组织分叉案例报告.html        # 对外展示的完整 HTML 报告样例
-│   └── screenshots/                 # README 里用到的报告截图预览
-├── references/                      # 分类、澄清、方法、风险、输出规则
-├── distill/                         # 蒸馏材料
-└── source-texts/                    # 原始文本
-```
+对外展示的内容主要是这些：
+
+- [`README.md`](./README.md)：项目介绍、安装方式、使用示例和 HTML 预览
+- [`LICENSE`](./LICENSE)：MIT 许可
+- [`SKILL.md`](./SKILL.md)：Skill 主入口，供 Agent 实际加载
+
+`examples/`
+
+- [`examples/组织分叉案例输入.md`](./examples/组织分叉案例输入.md)：复杂案例输入样例
+- [`examples/组织分叉案例报告.html`](./examples/组织分叉案例报告.html)：完整 HTML 报告样例
+- `examples/screenshots/`：README 里使用的报告截图预览
+
+`references/`
+
+- `categories/`
+  - [`problem-taxonomy.md`](./references/categories/problem-taxonomy.md)
+- `clarification/`
+  - [`ambiguity-gate.md`](./references/clarification/ambiguity-gate.md)
+  - [`focus-anchor.md`](./references/clarification/focus-anchor.md)
+  - [`intake-flow.md`](./references/clarification/intake-flow.md)
+  - [`problem-restatement.md`](./references/clarification/problem-restatement.md)
+  - [`question-packs-by-domain.md`](./references/clarification/question-packs-by-domain.md)
+- `html-output/`
+  - [`report-build-rules.md`](./references/html-output/report-build-rules.md)
+  - [`visual-report-spec.md`](./references/html-output/visual-report-spec.md)
+  - [`visual-report-template.html`](./references/html-output/visual-report-template.html)
+- `methods/`
+  - [`alliance-boundaries.md`](./references/methods/alliance-boundaries.md)
+  - [`communication-calibration.md`](./references/methods/communication-calibration.md)
+  - [`core-contradiction.md`](./references/methods/core-contradiction.md)
+  - [`execution-routes.md`](./references/methods/execution-routes.md)
+  - [`forces-resources.md`](./references/methods/forces-resources.md)
+  - [`investigation.md`](./references/methods/investigation.md)
+  - [`method-index.md`](./references/methods/method-index.md)
+  - [`review-loop.md`](./references/methods/review-loop.md)
+  - [`stage-judgment.md`](./references/methods/stage-judgment.md)
+- `risks/`
+  - [`anti-dogmatism.md`](./references/risks/anti-dogmatism.md)
+  - [`base-area-spark.md`](./references/risks/base-area-spark.md)
+  - [`committee-central-responsibility.md`](./references/risks/committee-central-responsibility.md)
+  - [`concentrated-force.md`](./references/risks/concentrated-force.md)
+  - [`internal-external-causes.md`](./references/risks/internal-external-causes.md)
+  - [`legitimacy.md`](./references/risks/legitimacy.md)
+  - [`main-front-shift.md`](./references/risks/main-front-shift.md)
+  - [`mass-line-guidance.md`](./references/risks/mass-line-guidance.md)
+  - [`middle-forces-hardliners.md`](./references/risks/middle-forces-hardliners.md)
+  - [`misuse-boundaries.md`](./references/risks/misuse-boundaries.md)
+  - [`no-investigation-no-right-to-speak.md`](./references/risks/no-investigation-no-right-to-speak.md)
+  - [`practice-stage-review.md`](./references/risks/practice-stage-review.md)
+  - [`principal-contradiction.md`](./references/risks/principal-contradiction.md)
+  - [`propaganda-unified-line.md`](./references/risks/propaganda-unified-line.md)
+  - [`protracted-war-endgame.md`](./references/risks/protracted-war-endgame.md)
+  - [`rectification-criticism.md`](./references/risks/rectification-criticism.md)
+  - [`translation-red-lines.md`](./references/risks/translation-red-lines.md)
+  - [`united-front-independence.md`](./references/risks/united-front-independence.md)
+- `routing/`
+  - [`confidence-rules.md`](./references/routing/confidence-rules.md)
+  - [`output-mode-routing.md`](./references/routing/output-mode-routing.md)
+- `scenarios/`
+  - [`learning-growth.md`](./references/scenarios/learning-growth.md)
+  - [`life-decisions.md`](./references/scenarios/life-decisions.md)
+  - [`relationship-boundaries.md`](./references/scenarios/relationship-boundaries.md)
+  - [`scene-index.md`](./references/scenarios/scene-index.md)
+  - [`self-management.md`](./references/scenarios/self-management.md)
+  - [`team-governance.md`](./references/scenarios/team-governance.md)
+  - [`work-execution.md`](./references/scenarios/work-execution.md)
 
 
 ## 最后一句
