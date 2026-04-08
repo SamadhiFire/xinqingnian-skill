@@ -1,4 +1,6 @@
-﻿# 分类置信度与升级规则
+# 分类置信度与升级规则
+
+[返回总入口](../../SKILL.md) · [模糊输入识别](../clarification/ambiguity-gate.md) · [澄清流程](../clarification/intake-flow.md) · [输出路由](./output-mode-routing.md)
 
 ## 一、文件作用
 
@@ -16,9 +18,9 @@
 
 对应关系：
 
-- 输入是否足够清楚：看 `clarification/ambiguity-gate.md`
-- 需要澄清时怎么追问：看 `clarification/intake-flow.md`
-- 正式输出模式怎么路由：看 `output-mode-routing.md`
+- 输入是否足够清楚：看 [ambiguity-gate.md](../clarification/ambiguity-gate.md)
+- 需要澄清时怎么追问：看 [intake-flow.md](../clarification/intake-flow.md)
+- 正式输出模式怎么路由：看 [output-mode-routing.md](./output-mode-routing.md)
 
 ## 二、什么是“置信度”
 
@@ -61,7 +63,7 @@
 处理原则：
 
 - 不直接停下，但应补最少量信息，或先按更稳妥的低风险路径走。
-- 方法上优先回到更前置、更保守的入口，例如先回 `investigation.md`。
+- 方法上优先回到更前置、更保守的入口，例如先回 [investigation.md](../methods/investigation.md)。
 - 输出上优先保留 `深度分析`，不要抢升 HTML。
 
 ### 3. 低置信度
@@ -105,25 +107,25 @@
 
 出现下面情况时，方法入口通常比较稳：
 
-- 事实不清、对象混：优先 `investigation.md`
-- 问题很多但抓不住重点：优先 `core-contradiction.md`
-- 旧打法失灵，怀疑转段：优先 `stage-judgment.md`
-- 资源紧、线太多：优先 `forces-resources.md`
-- 多方关系复杂：优先 `alliance-boundaries.md`
-- 一说就空、一公开就偏：优先 `communication-calibration.md`
-- 方向有了但落不下去：优先 `execution-routes.md`
-- 已有真实结果，要复盘纠偏：优先 `review-loop.md`
+- 事实不清、对象混：优先 [investigation.md](../methods/investigation.md)
+- 问题很多但抓不住重点：优先 [core-contradiction.md](../methods/core-contradiction.md)
+- 旧打法失灵，怀疑转段：优先 [stage-judgment.md](../methods/stage-judgment.md)
+- 资源紧、线太多：优先 [forces-resources.md](../methods/forces-resources.md)
+- 多方关系复杂：优先 [alliance-boundaries.md](../methods/alliance-boundaries.md)
+- 一说就空、一公开就偏：优先 [communication-calibration.md](../methods/communication-calibration.md)
+- 方向有了但落不下去：优先 [execution-routes.md](../methods/execution-routes.md)
+- 已有真实结果，要复盘纠偏：优先 [review-loop.md](../methods/review-loop.md)
 
 ### 2. 中置信度
 
-- 两张相邻卡都像能用，比如 `investigation.md` 和 `core-contradiction.md`，或 `stage-judgment.md` 和 `forces-resources.md`。
+- 两张相邻卡都像能用，比如 [investigation.md](../methods/investigation.md) 和 [core-contradiction.md](../methods/core-contradiction.md)，或 [stage-judgment.md](../methods/stage-judgment.md) 和 [forces-resources.md](../methods/forces-resources.md)。
 - 这时优先选更前置、更保守的一张，不要先跳后段卡。
 
 ### 3. 低置信度
 
 - 感觉 8 张卡都能调。
 - 这通常说明问题还没成形，或前门没有完成。
-- 处理方式：先回分类层，必要时回澄清层，再从 `investigation.md` 重新起手。
+- 处理方式：先回分类层，必要时回澄清层，再从 [investigation.md](../methods/investigation.md) 重新起手。
 
 ## 六、风险置信度判断
 
@@ -138,8 +140,8 @@
 
 处理方式：
 
-1. 先看 `misuse-boundaries.md`
-2. 再看 `translation-red-lines.md`
+1. 先看 [misuse-boundaries.md](../risks/misuse-boundaries.md)
+2. 再看 [translation-red-lines.md](../risks/translation-red-lines.md)
 3. 必要时进入对应独立风险卡
 
 ### 2. 中置信度：先保守表达
@@ -195,7 +197,7 @@
 
 如果你现在整体都拿不准，按下面顺序退回：
 
-1. 先看是不是输入本身不够清楚；如果是，回 `ambiguity-gate.md`
+1. 先看是不是输入本身不够清楚；如果是，回 [ambiguity-gate.md](../clarification/ambiguity-gate.md)
 2. 再看是不是方法入口拿不准；如果是，退回更前置的方法卡
 3. 再看是不是风险判断拿不准；如果是，先不用高风险表达
 4. 最后看是不是输出形式拿不准；如果是，默认保留 `深度分析`
@@ -209,7 +211,7 @@
 当你真的无法稳定判断时，默认采用下面这组保守策略：
 
 - 分类上：先选最接近的主领域，暂不做过细次领域扩张
-- 方法上：先从 `investigation.md` 或更前置卡起手
+- 方法上：先从 [investigation.md](../methods/investigation.md) 或更前置卡起手
 - 风险上：先不用高风险表达
 - 输出上：先做 `深度分析`
 - HTML 上：先不升级

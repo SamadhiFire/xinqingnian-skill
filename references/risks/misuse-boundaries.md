@@ -1,10 +1,12 @@
-﻿# 常见误用与边界
+# 常见误用与边界
+
+[返回总入口](../../SKILL.md) · [风险路由](../routing/confidence-rules.md) · [表达红线入口](./translation-red-lines.md)
 
 ## 文件作用
 
 - 这张入口页只收口一种风险：方法被用坏、用重、用偏、用错位。
 - 如果你在判断的是“这张卡能不能直接调”“会不会把高压方法拿去打轻问题”“会不会把后段卡当前段卡用”，先看这里。
-- 如果风险主要来自某个高风险表达本身怎么翻、怎么说、怎么不能口语化乱用，请转去 `translation-red-lines.md`。
+- 如果风险主要来自某个高风险表达本身怎么翻、怎么说、怎么不能口语化乱用，请转去 [translation-red-lines.md](./translation-red-lines.md)。
 
 ## 先看哪一类风险
 
@@ -56,57 +58,57 @@
 
 ## 8 张方法卡的常见误用提醒
 
-- `investigation.md`：最常见误用是把调查用成拖延术，把对象校准用成迎合术。
-- `core-contradiction.md`：最常见误用是把声音最大的问题当主要矛盾，把结构诊断做成道德贴标签。
-- `stage-judgment.md`：最常见误用是用单一信号宣布大转段，或把收口/分叉判断做成自动胜利论和自动末日论。
-- `forces-resources.md`：最常见误用是平均铺开、赌最亮点、只打前台不补底盘。
-- `alliance-boundaries.md`：最常见误用是无条件大联合、永久贴标签、只讲合作不讲条款检查和程序顺序。
-- `communication-calibration.md`：最常见误用是把表达当包装术，把统一口径当压反馈，把合法性/证据链当阴谋拼贴。
-- `execution-routes.md`：最常见误用是行政加码、一刀切 rollout、试点展示化、把组织换挡做成加控制。
-- `review-loop.md`：最常见误用是把复盘做成情绪总结或批评大会，把整风和纠偏做成清洗。
+- [investigation.md](../methods/investigation.md)：最常见误用是把调查用成拖延术，把对象校准用成迎合术。
+- [core-contradiction.md](../methods/core-contradiction.md)：最常见误用是把声音最大的问题当主要矛盾，把结构诊断做成道德贴标签。
+- [stage-judgment.md](../methods/stage-judgment.md)：最常见误用是用单一信号宣布大转段，或把收口/分叉判断做成自动胜利论和自动末日论。
+- [forces-resources.md](../methods/forces-resources.md)：最常见误用是平均铺开、赌最亮点、只打前台不补底盘。
+- [alliance-boundaries.md](../methods/alliance-boundaries.md)：最常见误用是无条件大联合、永久贴标签、只讲合作不讲条款检查和程序顺序。
+- [communication-calibration.md](../methods/communication-calibration.md)：最常见误用是把表达当包装术，把统一口径当压反馈，把合法性/证据链当阴谋拼贴。
+- [execution-routes.md](../methods/execution-routes.md)：最常见误用是行政加码、一刀切 rollout、试点展示化、把组织换挡做成加控制。
+- [review-loop.md](../methods/review-loop.md)：最常见误用是把复盘做成情绪总结或批评大会，把整风和纠偏做成清洗。
 
 ## 现有风险文件轻归类
 
 ### 保留独立风险卡
 
-- `no-investigation-no-right-to-speak.md`
-- `anti-dogmatism.md`
-- `principal-contradiction.md`
-- `internal-external-causes.md`
-- `protracted-war-endgame.md`
-- `main-front-shift.md`
-- `base-area-spark.md`
-- `concentrated-force.md`
-- `united-front-independence.md`
-- `middle-forces-hardliners.md`
-- `propaganda-unified-line.md`
-- `legitimacy.md`
-- `mass-line-guidance.md`
-- `committee-central-responsibility.md`
-- `practice-stage-review.md`
-- `rectification-criticism.md`
+- [no-investigation-no-right-to-speak.md](./no-investigation-no-right-to-speak.md)
+- [anti-dogmatism.md](./anti-dogmatism.md)
+- [principal-contradiction.md](./principal-contradiction.md)
+- [internal-external-causes.md](./internal-external-causes.md)
+- [protracted-war-endgame.md](./protracted-war-endgame.md)
+- [main-front-shift.md](./main-front-shift.md)
+- [base-area-spark.md](./base-area-spark.md)
+- [concentrated-force.md](./concentrated-force.md)
+- [united-front-independence.md](./united-front-independence.md)
+- [middle-forces-hardliners.md](./middle-forces-hardliners.md)
+- [propaganda-unified-line.md](./propaganda-unified-line.md)
+- [legitimacy.md](./legitimacy.md)
+- [mass-line-guidance.md](./mass-line-guidance.md)
+- [committee-central-responsibility.md](./committee-central-responsibility.md)
+- [practice-stage-review.md](./practice-stage-review.md)
+- [rectification-criticism.md](./rectification-criticism.md)
 
 ### 主要挂到 `misuse-boundaries.md`
 
-- 先后顺序错位：`no-investigation-no-right-to-speak.md`、`practice-stage-review.md`
-- 扩大化使用：`principal-contradiction.md`、`protracted-war-endgame.md`、`main-front-shift.md`
-- 行动与 rollout 用坏：`concentrated-force.md`、`mass-line-guidance.md`、`committee-central-responsibility.md`
-- 联盟与边界用坏：`united-front-independence.md`、`middle-forces-hardliners.md`
-- 纠偏与治理用坏：`propaganda-unified-line.md`、`rectification-criticism.md`
-- 合法性和证据链用坏：`legitimacy.md`、`propaganda-unified-line.md`
+- 先后顺序错位：[no-investigation-no-right-to-speak.md](./no-investigation-no-right-to-speak.md)、[practice-stage-review.md](./practice-stage-review.md)
+- 扩大化使用：[principal-contradiction.md](./principal-contradiction.md)、[protracted-war-endgame.md](./protracted-war-endgame.md)、[main-front-shift.md](./main-front-shift.md)
+- 行动与 rollout 用坏：[concentrated-force.md](./concentrated-force.md)、[mass-line-guidance.md](./mass-line-guidance.md)、[committee-central-responsibility.md](./committee-central-responsibility.md)
+- 联盟与边界用坏：[united-front-independence.md](./united-front-independence.md)、[middle-forces-hardliners.md](./middle-forces-hardliners.md)
+- 纠偏与治理用坏：[propaganda-unified-line.md](./propaganda-unified-line.md)、[rectification-criticism.md](./rectification-criticism.md)
+- 合法性和证据链用坏：[legitimacy.md](./legitimacy.md)、[propaganda-unified-line.md](./propaganda-unified-line.md)
 
 ### 主要挂到 `translation-red-lines.md`
 
 - 几乎所有独立风险卡都属于“具体表达红线”。
-- 快速入口优先看：`anti-dogmatism.md`、`principal-contradiction.md`、`internal-external-causes.md`、`base-area-spark.md`、`united-front-independence.md`、`propaganda-unified-line.md`、`legitimacy.md`、`mass-line-guidance.md`、`practice-stage-review.md`、`rectification-criticism.md`
+- 快速入口优先看：[anti-dogmatism.md](./anti-dogmatism.md)、[principal-contradiction.md](./principal-contradiction.md)、[internal-external-causes.md](./internal-external-causes.md)、[base-area-spark.md](./base-area-spark.md)、[united-front-independence.md](./united-front-independence.md)、[propaganda-unified-line.md](./propaganda-unified-line.md)、[legitimacy.md](./legitimacy.md)、[mass-line-guidance.md](./mass-line-guidance.md)、[practice-stage-review.md](./practice-stage-review.md)、[rectification-criticism.md](./rectification-criticism.md)
 
 ### 可一起顺带查看
 
 - 下面几组表达经常一起出现，实际使用时可以顺带一起检查：
-- `protracted-war-endgame.md` + `main-front-shift.md`
-- `mass-line-guidance.md` + `committee-central-responsibility.md`
-- `practice-stage-review.md` + `rectification-criticism.md`
-- `legitimacy.md` + `propaganda-unified-line.md`
+- [protracted-war-endgame.md](./protracted-war-endgame.md) + [main-front-shift.md](./main-front-shift.md)
+- [mass-line-guidance.md](./mass-line-guidance.md) + [committee-central-responsibility.md](./committee-central-responsibility.md)
+- [practice-stage-review.md](./practice-stage-review.md) + [rectification-criticism.md](./rectification-criticism.md)
+- [legitimacy.md](./legitimacy.md) + [propaganda-unified-line.md](./propaganda-unified-line.md)
 
 ## 使用顺序建议
 

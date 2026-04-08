@@ -1,10 +1,9 @@
 ﻿<!DOCTYPE html>
-<!-- 示例成品：基于 visual-report-template.html 填充内容得到，用来展示毛选.skill 的最终 HTML 报告效果。 -->
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>示例报告｜合伙项目为什么越开会越推不动</title>
+  <title>示例报告｜核心项目进入双轨运行后，中层如何先保项目再保自己</title>
   <style>
     :root {
       --red-900: #560606;
@@ -786,6 +785,52 @@
       color: var(--red-700);
     }
 
+    .report-table-shell {
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(122, 10, 7, 0.14);
+      box-shadow: var(--shadow-md);
+      background: linear-gradient(180deg, rgba(255, 252, 244, 0.98), rgba(246, 236, 214, 0.94));
+    }
+
+    .report-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .report-table th,
+    .report-table td {
+      padding: 14px 16px;
+      vertical-align: top;
+      text-align: left;
+      border-bottom: 1px solid rgba(122, 10, 7, 0.1);
+      border-right: 1px solid rgba(122, 10, 7, 0.08);
+      word-break: break-word;
+    }
+
+    .report-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .report-table th:last-child,
+    .report-table td:last-child {
+      border-right: 0;
+    }
+
+    .report-table th {
+      color: var(--red-800);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      background: linear-gradient(180deg, rgba(255, 240, 205, 0.98), rgba(246, 225, 181, 0.94));
+    }
+
+    .table-note {
+      margin-top: 10px;
+      color: var(--ink-700);
+      font-size: 14px;
+    }
+
     .citation-list {
       display: grid;
       gap: 12px;
@@ -978,6 +1023,24 @@
         grid-template-columns: 1fr;
       }
 
+      .report-table,
+      .report-table thead,
+      .report-table tbody,
+      .report-table tr,
+      .report-table th,
+      .report-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .report-table thead {
+        display: none;
+      }
+
+      .report-table td {
+        border-right: 0;
+      }
+
       h1 {
         font-size: 40px;
       }
@@ -1002,16 +1065,16 @@
   <main class="page">
     <header class="cover">
       <div class="cover-topbar">
-        <span class="mark">Mao Method Sample</span>
-        <span class="edition">示例成品报告</span>
+        <span class="mark">毛选方法可视化报告</span>
+        <span class="edition">复杂案例样例报告</span>
       </div>
 
       <div class="cover-grid">
         <section>
-          <p class="cover-kicker">项目推进 / 合伙协作 / MVP 收口</p>
-          <h1>合伙创业项目：为什么越开会越推不动</h1>
-          <p class="cover-summary">目标是 6 周内上线 MVP，但产品、技术和创始人在需求会上连续拉扯两周，大家都很努力，事情却始终没有收口。这份报告要回答的不是“谁对谁错”，而是现在到底卡在哪、先砍哪、谁拍板、怎么动。</p>
-          <div class="summary-banner">当前别再一边赶时间一边舍不得砍需求了，先收口 MVP，再定唯一拍板人，再跑一轮真验证。</div>
+          <p class="cover-kicker">复杂项目 / 组织分叉 / 中层路线</p>
+          <h1>核心项目进入双轨运行后，中层如何先保项目再保自己</h1>
+          <p class="cover-summary">一个融资敏感期的省级医疗核心项目，纸面上仍由公司统一推进，实操上却已出现非正式控制链、双接口和影子承接信号；本报告要回答的不是谁的八卦更真，而是主要矛盾是什么、当前处在什么阶段，以及夹层中层如何在 30 天内稳住项目并守住责任边界。</p>
+          <div class="summary-banner">不抢名义总接口，只抢正式事实出口；制度上靠机制线，战术上保交付。</div>
         </section>
 
         <aside class="meta-panel">
@@ -1022,15 +1085,19 @@
             </div>
             <div class="meta-row">
               <dt>复杂度</dt>
-              <dd>L3</dd>
+              <dd>L4</dd>
             </div>
             <div class="meta-row">
               <dt>主场景</dt>
-              <dd>工作推进 / 合伙协作</dd>
+              <dd>团队治理</dd>
             </div>
             <div class="meta-row">
               <dt>当前阶段</dt>
-              <dd>应从探索期切到集中收口期</dd>
+              <dd>转段期</dd>
+            </div>
+            <div class="meta-row">
+              <dt>服务对象</dt>
+              <dd>首先对用户本人和省级演示的交付稳定负责。</dd>
             </div>
           </dl>
         </aside>
@@ -1040,31 +1107,39 @@
     </header>
 
     <div class="page-stack">
-      <section class="section">
+            <section class="section">
         <div class="section-head">
           <div>
             <p class="section-index">一 / 固定骨架</p>
             <h2>核心判断区</h2>
-            <p class="section-note">先把目标、阶段、主问题和当前第一要务压稳，后面的所有模块都围绕这一层展开。</p>
+            <p class="section-note">先把目标、服务对象、阶段、核心问题、控制点和当前第一要务压稳，后面的模块都围绕这一层展开。</p>
           </div>
           <span class="section-chip">固定骨架</span>
         </div>
-        <div class="grid grid-4">
+        <div class="grid grid-3">
           <article class="info-card">
             <p class="card-label">用户目标</p>
-            <p class="card-value">6 周内上线 MVP，拿到第一批付费用户，而不是继续在内部打转。</p>
+            <p class="card-value">30 天内先保住省级演示和项目不炸，再判断继续留在现有体系、转向机制线，还是开始准备离开，避免成为双轨运行下最容易被牺牲的中层。</p>
+          </article>
+          <article class="info-card">
+            <p class="card-label">服务对象</p>
+            <p class="card-value">先对用户本人、项目交付稳定和客户执行层的单一口径负责，而不是替任何派系做政治背书。</p>
           </article>
           <article class="info-card">
             <p class="card-label">当前阶段</p>
-            <p class="card-value">项目已经没有条件继续“边讨论边发散”了，旧办法失灵是因为团队还在用探索期的心态处理收口期的问题。</p>
+            <p class="card-value">局面已从普通协同失灵转入双轨运行与预清算形成期；旧的口头协调和私群补流程已不足以控局。</p>
           </article>
           <article class="info-card">
             <p class="card-label">核心问题</p>
-            <p class="card-value">不是大家不努力，而是主路线没收口、主责没归位、创始人又总想把两边都保住。</p>
+            <p class="card-value">正式责任链与非正式控制链正在争客户接口、决策权、留痕权和未来承接权，交付却仍被要求按“正常项目管理”独自兜底。</p>
+          </article>
+          <article class="info-card">
+            <p class="card-label">关键控制点</p>
+            <p class="card-value">正式会后纪要出口、需求变更确认、客户执行层口径、资料外发边界、岗位与责任是否同步书面化。</p>
           </article>
           <article class="info-card">
             <p class="card-label">当前第一要务</p>
-            <p class="card-value">先把 MVP 定义砍清楚，并明确一个对上线标准负责的人，不再让会议继续无限翻案。</p>
+            <p class="card-value">先把统一纪要和事实留痕钉成默认规则，让项目至少在执行层面重新回到单一正式口径。</p>
           </article>
         </div>
       </section>
@@ -1081,15 +1156,15 @@
 
         <div class="relation-layout">
           <div class="graph-panel">
-            <h3 class="graph-panel-title">人物与事项关联图</h3>
-            <p class="graph-panel-note">这个局的难点不是谁更有道理，而是创始人、产品、技术、上线动作和现金流彼此怎么卡住了彼此。节点、关系线都可以点击。</p>
+            <h3 class="graph-panel-title">正式事实出口争夺图</h3>
+            <p class="graph-panel-note">图里只保留这局最会改写结果的 5 个节点：谁有支点、谁在稀释口径、什么动作能落地、什么因素在持续抽空项目资产。</p>
             <div class="graph-toolbar">
               <span class="mini-tag">节点可点</span>
               <span class="mini-tag">关系线可点</span>
               <span class="mini-tag">先看中心点</span>
             </div>
             <div class="graph-board">
-              <svg class="graph-svg" viewBox="0 0 920 540" role="img" aria-label="合伙创业项目的人物与事项关系图">
+              <svg class="graph-svg" viewBox="0 0 920 540" role="img" aria-label="复杂人物与事项关系图模板">
                 <defs>
                   <radialGradient id="coreGlow" cx="50%" cy="50%" r="70%">
                     <stop offset="0%" stop-color="#f7ddb0" />
@@ -1107,58 +1182,58 @@
                 <circle class="graph-ring" cx="460" cy="260" r="144"></circle>
                 <circle class="graph-ring" cx="460" cy="260" r="226"></circle>
 
-                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看创始人影响线详情" data-kind="关系线" data-title="创始人 -> MVP 收口失败" data-summary="这条线代表的不是单纯支持，而是当前最关键的拍板影响线。" data-points="创始人一边要求快，一边又舍不得砍需求。|每次“先都做”都会把中心卡点继续放大。">
+                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看支持关系详情" data-kind="关系线" data-title="林倩 / 交付 -> 正式事实出口" data-summary="这是当前最重要的支点关系：用户名义上拥有总协调权限，也最接近把会后事实沉淀成正式口径的落点。" data-points="她并不天然拥有全部前台资源，但拥有把执行层事实固定成书面口径的窗口。|只要这一条线站住，责任边界和后续判断就还有被正式证明的可能。">
                   <path class="graph-edge-hit" d="M460 260 C360 205, 300 175, 220 150"></path>
                   <path class="graph-edge edge-support graph-shape" marker-end="url(#arrow-support)" d="M460 260 C360 205, 300 175, 220 150"></path>
-                  <text class="graph-edge-label" x="294" y="170">拍板影响</text>
+                  <text class="graph-edge-label" x="294" y="170">名义权限 / 执行信任</text>
                 </g>
 
-                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看产品技术拉扯详情" data-kind="关系线" data-title="产品 / 技术双线 -> MVP 收口失败" data-summary="这是当前最明显的拉扯与制衡关系。" data-points="产品线想保体验完整，技术线想控制返工和稳定性风险。|如果没有统一上线标准，这条线会持续互相抵消。">
+                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看冲突关系详情" data-kind="关系线" data-title="COO + 商务前台 -> 正式事实出口" data-summary="这是当前最主要的稀释关系：他们不会公开否定统一纪要，但会试图把纪要变成先审后发、弱化表述、缩小抄送范围的筛选文件。" data-points="这条线控制大量客户前台和临时资源，擅长用‘先别写太重’来把正式出口磨钝。|如果这里不设边界，统一纪要很容易被改造成一份没有牙齿的通报。">
                   <path class="graph-edge-hit" d="M460 260 C585 214, 650 180, 718 158"></path>
                   <path class="graph-edge edge-conflict graph-shape" marker-end="url(#arrow-conflict)" d="M460 260 C585 214, 650 180, 718 158"></path>
-                  <text class="graph-edge-label" x="606" y="170">拉扯制衡</text>
+                  <text class="graph-edge-label" x="606" y="170">筛选 / 稀释</text>
                 </g>
 
-                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看上线动作依赖详情" data-kind="关系线" data-title="MVP 收口失败 -> 上线动作" data-summary="上线动作能不能动起来，取决于中心卡点有没有先被收口。" data-points="MVP 定义不清，排期和开发就会一直漂移。|这条线决定路线能不能从判断变成动作。">
+                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看依赖关系详情" data-kind="关系线" data-title="正式事实出口 -> 统一纪要机制" data-summary="这是一条执行依赖链：如果正式事实出口站不住，统一纪要、台账和变更确认就只会停留在口号层。" data-points="统一纪要是把分析变成动作的第一道入口，也是客户执行层最容易接受的正式落点。|它不必先抢成唯一总接口，但必须先成为唯一会后事实出口。">
                   <path class="graph-edge-hit" d="M460 260 C392 340, 335 380, 260 412"></path>
                   <path class="graph-edge edge-control graph-shape" marker-end="url(#arrow-support)" d="M460 260 C392 340, 335 380, 260 412"></path>
-                  <text class="graph-edge-label" x="294" y="394">执行依赖</text>
+                  <text class="graph-edge-label" x="294" y="394">落地 / 固化</text>
                 </g>
 
-                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看现金流阻断详情" data-kind="关系线" data-title="3 个月现金流 -> MVP 收口失败" data-summary="这是这个项目最硬的一条现实阻断线。" data-points="团队已经没有条件继续无限返工。|每一次不收口，都是在直接吃掉试错窗口。">
+                <g class="graph-hotspot" tabindex="0" role="button" aria-label="查看阻断关系详情" data-kind="关系线" data-title="双接口 + 影子承接 -> 正式事实出口" data-summary="这是一条持续抽空项目资产的阻断线：资料外流、外部壳、小群决策和双接口会不断让正式口径失真。" data-points="它代表的不只是噪音，而是项目解释权和未来承接权正在被悄悄迁移。|如果不先收紧资料边界和会后口径，交付会处在责任留在内部、事实流向外部的最差位置。">
                   <path class="graph-edge-hit" d="M460 260 C560 333, 642 365, 728 398"></path>
                   <path class="graph-edge edge-block graph-shape" marker-end="url(#arrow-conflict)" d="M460 260 C560 333, 642 365, 728 398"></path>
-                  <text class="graph-edge-label" x="614" y="404">现实阻断</text>
+                  <text class="graph-edge-label" x="614" y="404">抽空 / 阻断</text>
                 </g>
 
-                <g class="graph-hotspot graph-node-core" tabindex="0" role="button" aria-label="查看中心节点详情" data-kind="核心节点" data-title="MVP 收口失败" data-summary="当前主矛盾不是情绪冲突，而是最小可交付范围一直定不下来。" data-points="所有支持、拉扯、依赖和阻断都围绕它展开。|不先收这个口，后面所有努力都会继续打架。">
+                <g class="graph-hotspot graph-node-core" tabindex="0" role="button" aria-label="查看中心节点详情" data-kind="核心节点" data-title="正式事实出口" data-summary="当前真正决定局面谁来定义责任、谁还能保住项目解释权的中心节点。" data-points="这不是一个文书格式问题，而是谁来定义事实、谁来定义责任的问题。|只要正式事实出口还在，用户就仍有用机制保项目、保边界、保自身的空间。">
                   <circle class="graph-shape" cx="460" cy="260" r="86"></circle>
-                  <text class="graph-node-title" x="460" y="246">MVP 收口失败</text>
-                  <text class="graph-node-sub" x="460" y="275">主矛盾 / 当前卡点</text>
+                  <text class="graph-node-title" x="460" y="246">正式事实出口</text>
+                  <text class="graph-node-sub" x="460" y="275">项目解释权 / 责任归属</text>
                 </g>
 
-                <g class="graph-hotspot graph-node-person" tabindex="0" role="button" aria-label="查看创始人详情" data-kind="人物节点" data-title="创始人" data-summary="他既是推动者，也是当前卡点的放大器。" data-points="真正重要的不是他的职位，而是他有最终拍板权。|只要他继续什么都想保，冲突就不会真正收口。">
+                <g class="graph-hotspot graph-node-person" tabindex="0" role="button" aria-label="查看人物 A 详情" data-kind="人物节点" data-title="林倩 / 交付总协调" data-summary="关键支点不在于职位多高，而在于她仍能把项目事实和执行口径发成正式文件。" data-points="她手里最值钱的不是客户关系，而是名义总协调权限、客户执行层信任和会后纪要出口。|如果她把这个出口让出去，就可能进入‘留职削权、责任不减’的最差状态。">
                   <circle class="graph-shape" cx="220" cy="150" r="60"></circle>
-                  <text class="graph-node-title" x="220" y="145">创始人</text>
-                  <text class="graph-node-sub" x="220" y="171">目标推动者</text>
+                  <text class="graph-node-title" x="220" y="145">林倩 / 交付</text>
+                  <text class="graph-node-sub" x="220" y="171">唯一可固化支点</text>
                 </g>
 
-                <g class="graph-hotspot graph-node-org" tabindex="0" role="button" aria-label="查看产品与技术双线详情" data-kind="组织节点" data-title="产品 / 技术双线" data-summary="这不是坏人对坏人，而是两条合理诉求在没有统一标准时的硬碰硬。" data-points="产品负责完整性，技术负责稳定性。|没有共同标准时，两边都会用拉扯来保护自己。">
+                <g class="graph-hotspot graph-node-org" tabindex="0" role="button" aria-label="查看组织 B 详情" data-kind="组织节点" data-title="COO + 商务前台" data-summary="这是当前最强的非正式控制链，掌握客户前台、临时资源和口头调度，擅长在不公开翻脸的情况下筛选正式口径。" data-points="它的危险不在于会不会公开反对统一纪要，而在于能否把纪要改造成先过他们一遍、再发出去的软文件。|与它合作可以拿资源，但绝不能把事实出口交给它。">
                   <rect class="graph-shape" x="624" y="108" width="188" height="96"></rect>
-                  <text class="graph-node-title" x="718" y="151">产品 / 技术双线</text>
-                  <text class="graph-node-sub" x="718" y="178">拉扯发生点</text>
+                  <text class="graph-node-title" x="718" y="151">COO + 商务前台</text>
+                  <text class="graph-node-sub" x="718" y="178">非正式控制链</text>
                 </g>
 
-                <g class="graph-hotspot graph-node-event" tabindex="0" role="button" aria-label="查看上线动作详情" data-kind="事项节点" data-title="上线动作" data-summary="这是把路线从纸面判断转成现实推进的第一道入口。" data-points="范围一旦收口，上线动作就能连续推进。|如果它迟迟不动，大家会继续误以为问题出在执行态度。">
+                <g class="graph-hotspot graph-node-event" tabindex="0" role="button" aria-label="查看事项 C 详情" data-kind="事项节点" data-title="统一纪要机制" data-summary="这是把判断变成动作的第一道入口：已确认、待客户确认、待内部确认、风险与截止时间必须在这里被看见。" data-points="客户执行层最容易接受的不是谁更强势，而是会后口径不再打架。|统一纪要一旦连续跑稳两到三次，就有机会从‘你的动作’变成‘项目默认规则’。">
                   <circle class="graph-shape" cx="260" cy="412" r="60"></circle>
-                  <text class="graph-node-title" x="260" y="406">上线动作</text>
-                  <text class="graph-node-sub" x="260" y="433">执行入口</text>
+                  <text class="graph-node-title" x="260" y="406">统一纪要机制</text>
+                  <text class="graph-node-sub" x="260" y="433">执行落点</text>
                 </g>
 
-                <g class="graph-hotspot graph-node-resource" tabindex="0" role="button" aria-label="查看现金流详情" data-kind="资源节点" data-title="3 个月现金流" data-summary="这是这个项目最硬的现实边界。" data-points="它代表团队还能承受多久的反复返工。|不是所有路线都能穿过这道约束。">
+                <g class="graph-hotspot graph-node-resource" tabindex="0" role="button" aria-label="查看资源 D 详情" data-kind="资源节点" data-title="双接口 + 影子承接" data-summary="这是当前最危险的阻断源：会后另起小群、资料流向非合同链、外部壳和外围顾问提前接触核心项目信息。" data-points="它代表的不只是管理混乱，而是客户资产和未来承接主体正在被悄悄分叉。|如果这里不设边界，正式责任仍留在公司和交付，事实与资源却可能流向外部链条。">
                   <rect class="graph-shape" x="618" y="352" width="220" height="96"></rect>
-                  <text class="graph-node-title" x="728" y="394">3 个月现金流</text>
-                  <text class="graph-node-sub" x="728" y="422">现实边界</text>
+                  <text class="graph-node-title" x="728" y="394">双接口 + 影子承接</text>
+                  <text class="graph-node-sub" x="728" y="422">主要阻断</text>
                 </g>
               </svg>
             </div>
@@ -1168,9 +1243,9 @@
             <article class="aside-card">
               <h3>使用方式</h3>
               <ul class="bullet-list">
-                <li>先看中心节点，再看四条关键关系线。</li>
-                <li>优先保留 5 到 9 个关键节点，不要把噪音也塞进图里。</li>
-                <li>点击节点或关系线，可以展开更细的结构信息。</li>
+                <li>先看“正式事实出口”，再看谁在支撑它、谁在稀释它、什么动作能把它落地。</li>
+                <li>不要把绯闻和情绪冲突误当成中心点，真正的中心是项目解释权和责任归属。</li>
+                <li>点击节点或关系线，可以看见各方为什么重要、危险点在哪。</li>
               </ul>
             </article>
 
@@ -1178,20 +1253,20 @@
               <h3>关系索引</h3>
               <ul class="graph-index">
                 <li>
-                  <strong>创始人 -> MVP 收口失败</strong>
-                  <span>既是推动力，也是“什么都想保”的放大器。</span>
+                  <strong>林倩 / 交付 -&gt; 正式事实出口</strong>
+                  <span>名义权限、执行信任和书面留痕能力。</span>
                 </li>
                 <li>
-                  <strong>产品 / 技术双线 -> MVP 收口失败</strong>
-                  <span>两条合理诉求在没有统一标准时，持续互相抵消。</span>
+                  <strong>COO + 商务前台 -&gt; 正式事实出口</strong>
+                  <span>筛选口径、弱化表述、试图收回发送前控制权。</span>
                 </li>
                 <li>
-                  <strong>MVP 收口失败 -> 上线动作</strong>
-                  <span>只要范围不收口，执行就会一直漂。</span>
+                  <strong>正式事实出口 -&gt; 统一纪要机制</strong>
+                  <span>把事实沉淀成执行层面的唯一正式落点。</span>
                 </li>
                 <li>
-                  <strong>3 个月现金流 -> MVP 收口失败</strong>
-                  <span>每一次返工，都在直接消耗项目剩余寿命。</span>
+                  <strong>双接口 + 影子承接 -&gt; 正式事实出口</strong>
+                  <span>资料外流、壳化和会后另起口径的持续阻断。</span>
                 </li>
               </ul>
             </article>
@@ -1199,52 +1274,67 @@
         </div>
       </section>
 
-      <section class="section">
+            <section class="section">
         <div class="section-head">
           <div>
             <p class="section-index">三 / 建议路线</p>
             <h2>建议路线区</h2>
-            <p class="section-note">先定路线，再写前提，最后压成关键动作。这里负责“当前主路线”，不是路线大全。</p>
+            <p class="section-note">先定路线，再写前提、支点和底盘，最后压成关键动作。这里负责当前主路线，不负责路线大全。</p>
           </div>
           <span class="section-chip">固定骨架</span>
         </div>
 
         <div class="route-banner">
-          <h3>先砍范围，再定拍板人，再跑一轮真验证</h3>
-          <p>当前最优路线不是继续把需求会开得更长，而是先把 MVP 压缩成一条最小闭环，再用真实反馈替代内部空转。</p>
+          <h3>先把纪要做成事实出口，再用事实逼机制收口</h3>
+          <p>现在不适合先打政治仗，也不适合继续只靠口头扛；最稳的路，是先用统一纪要、台账和书面确认把项目重新拉回正式口径。</p>
         </div>
 
-        <div class="grid grid-2">
+        <div class="grid grid-3">
           <article class="route-card">
             <p class="card-label">成立前提</p>
-            <p>创始人接受先保一个目标；产品和技术都接受统一上线标准；团队同意本周只保留一次拍板会。</p>
+            <p>客户执行层接受统一纪要；CFO 愿意给机制软背书；你仍保有项目总协调的名义权限和稳定发送窗口。</p>
           </article>
           <article class="route-card">
+            <p class="card-label">当前支点</p>
+            <p>客户真正痛的是会后口径不一致，而不是谁关系更硬；你能发出统一纪要，这就是当前最值钱的支点。</p>
+          </article>
+          <article class="route-card">
+            <p class="card-label">底盘供给</p>
+            <p>股权归属节点、客户不愿项目继续失控、CFO 对留痕机制的默认支持，以及技术线仍能提供事实，这些共同构成后台供给。</p>
+          </article>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:16px;">
+          <article class="route-card">
             <p class="card-label">路线说明</p>
-            <p>先把“要什么”收口，再把“谁拍板”定死，最后用真实用户反馈检验路线，而不是继续在内部靠想象拉扯。</p>
+            <p>先拿住唯一正式会后纪要出口，再把口头指令回写、待确认事项和截止时间固定下来；一边稳住省级演示最小闭环，一边观察谁在软性去齿、谁在默认接受。</p>
+          </article>
+          <article class="route-card">
+            <p class="card-label">政策 / 规则重写点</p>
+            <p>把“先小群定、后补流程”改成“先进入纪要、无书面异议再执行”；把“商务和执行都能改口”改成“商务可并行，执行以正式纪要为落点”。</p>
           </article>
         </div>
 
         <div class="step-grid">
           <article class="step-card">
             <span class="step-no">1</span>
-            <h4>48 小时内冻结范围</h4>
-            <p>把需求分成“必须有 / 可以后补 / 暂不做”三层，当场定掉，不留会后再翻案。</p>
+            <h4>固化统一纪要模板</h4>
+            <p>每次会后固定写已确认、待客户确认、待内部确认、风险与截止时间，并抄送核心干系人。</p>
           </article>
           <article class="step-card">
             <span class="step-no">2</span>
-            <h4>指定唯一拍板人</h4>
-            <p>明确谁对上线标准负责，其他人可以提意见，但不能反复重新开题。</p>
+            <h4>冻结演示最小闭环</h4>
+            <p>把新增需求、临时指令和演示口径全部纳入台账，任何新增都要书面说明对排期和责任的影响。</p>
           </article>
           <article class="step-card">
             <span class="step-no">3</span>
-            <h4>一周内跑真验证</h4>
-            <p>拿一个最小可用版本给真实用户试，用反馈判路线，不再靠内部脑补用户。</p>
+            <h4>设置 30 天升级闸门</h4>
+            <p>连续观察两到三轮纪要后的反应，再决定继续留、转向机制线，还是把离场准备切成主线。</p>
           </article>
         </div>
       </section>
 
-      <section class="section">
+            <section class="section">
         <div class="section-head">
           <div>
             <p class="section-index">四 / 下一步行动</p>
@@ -1256,15 +1346,15 @@
         <div class="grid grid-3">
           <article class="info-card">
             <p class="card-label">近期动作</p>
-            <p>今天就约一场只做收口、不做脑暴的 45 分钟会，并在会后把冻结范围发全员确认。</p>
+            <p>连续两到三次按固定模板发客户周会纪要，同步建立决策、变更、风险三本台账，并把口头指令当天回写。</p>
           </article>
           <article class="info-card">
             <p class="card-label">观察点</p>
-            <p>如果争论明显减少、排期不再来回改、技术任务开始连续推进，说明主路线开始收拢；反之就要回头查拍板权是否还在漂。</p>
+            <p>客户是否开始默认以纪要作为执行口径；CFO 是否安静接纳；COO 线是只改措辞，还是试图收回发送权和抄送范围。</p>
           </article>
           <article class="info-card">
             <p class="card-label">风险提醒</p>
-            <p>最危险的不是冲突，而是继续用“先都做”拖延真正的取舍，把团队拖进无限返工。</p>
+            <p>可以软化措辞，不能交出出口；不要先打政治仗；任何删改、倒签、口头承诺都不能默默接受。</p>
           </article>
         </div>
       </section>
@@ -1272,7 +1362,113 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">五 / 人物关系</p>
+            <p class="section-index">五 / 证据链</p>
+            <h2>证据链模块</h2>
+            <p class="section-note">判断依赖事实链、程序链、授权链时保留。这里负责说明“为什么这样判断”，不是再讲一遍情绪感觉。</p>
+          </div>
+          <span class="section-chip">按需保留</span>
+        </div>
+        <div class="grid grid-2">
+          <article class="panel-card">
+            <p class="card-label">关键结论</p>
+            <p>项目已进入双轨运行与预清算形成期；继续按普通项目协同理解，只会把交付放到最容易接锅的位置。</p>
+          </article>
+          <article class="panel-card">
+            <p class="card-label">当前缺口</p>
+            <p>CFO 何时从软背书转为硬背书、客户何时从私下提醒升级成书面不满、外部壳是否已形成明确承接动作，仍是会改写升级速度的关键缺口。</p>
+          </article>
+          <article class="panel-card">
+            <p class="card-label">证据一</p>
+            <p>过去 8 个月里，小群决策、客户接口分叉、预算动作绕行和外部壳介入同步出现，说明问题不止是一次沟通冲突。</p>
+          </article>
+          <article class="panel-card">
+            <p class="card-label">证据二</p>
+            <p>测试环境材料经个人邮箱流向非合同链外部顾问；匿名举报又把资料外流、外围公司吃单和影子承接同时推到管理层视野。</p>
+          </article>
+          <article class="panel-card">
+            <p class="card-label">证据三</p>
+            <p>客户采购副主任已明确感知“两套系统同时对接”，CFO 同时要求系统留痕，而 COO 则要求只管稳交付，说明高层叙事已经分叉。</p>
+          </article>
+          <article class="panel-card">
+            <p class="card-label">最易被推翻点</p>
+            <p>目前缺少能一锤定音坐实利益输送或蓄意泄密的直接证据，因此不能把道德定性当主入口；真正稳的仍是先抓正式事实出口。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-index">六 / 控制点</p>
+            <h2>控制点 / 权力点分布表</h2>
+            <p class="section-note">当纸面关系和现实控制点不一致时保留。它负责把关键控制点分布写清，不重复证据链模块。</p>
+          </div>
+          <span class="section-chip">按需保留</span>
+        </div>
+        <div class="report-table-shell">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th>控制点</th>
+                <th>名义归属</th>
+                <th>现实掌握方</th>
+                <th>当前状态</th>
+                <th>对局面的影响</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>会后正式纪要 / 执行口径</td>
+                <td>交付总协调</td>
+                <td>仍可由用户发出，但 COO 商务线正试图筛选和软化</td>
+                <td>争夺中</td>
+                <td>谁控制它，谁就先定义客户执行层到底认哪套事实。</td>
+              </tr>
+              <tr>
+                <td>客户前台关系与商务接口</td>
+                <td>商务协同</td>
+                <td>COO 旧部与私人关系链</td>
+                <td>已分叉</td>
+                <td>客户已开始感知“两套系统同时对接”，是二期拆分给竞品的直接风险点。</td>
+              </tr>
+              <tr>
+                <td>预算 / 合同 / 审计节奏</td>
+                <td>CFO / 法务</td>
+                <td>CFO 机制线</td>
+                <td>稳定但观望</td>
+                <td>决定统一纪要、留痕和程序边界能否获得事实背书。</td>
+              </tr>
+              <tr>
+                <td>技术风险与资料真相</td>
+                <td>CTO / 架构线</td>
+                <td>技术负责人掌握，用户可部分连通</td>
+                <td>模糊但可争取</td>
+                <td>这是证明问题不是单纯交付无能，而是结构性失控的关键事实源。</td>
+              </tr>
+              <tr>
+                <td>资料边界与外部承接</td>
+                <td>正式项目组 / 法务</td>
+                <td>外部壳、小群和非合同链顾问已部分渗入</td>
+                <td>高风险分叉</td>
+                <td>决定责任是否留在公司内部，客户资产和未来承接是否被悄悄迁走。</td>
+              </tr>
+              <tr>
+                <td>岗位与责任调整权</td>
+                <td>CEO / HR</td>
+                <td>公司制度与 CEO 最终解释权</td>
+                <td>高风险模糊</td>
+                <td>一旦进入“留职削权但责任不减”，用户会掉进最差处境。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">这张表的重点不是谁名义上管什么，而是谁现实里正在改写客户口径、资料边界和责任落点。</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-index">七 / 人物关系</p>
             <h2>人物与关系清单模块</h2>
             <p class="section-note">只看关系图还不够，需要逐项补清角色、诉求、态度和边界时保留。这一块是补细节，不是重复画图。</p>
           </div>
@@ -1280,46 +1476,90 @@
         </div>
         <div class="grid grid-2">
           <article class="profile-card">
-            <h3>产品负责人</h3>
-            <p>负责把用户价值讲圆，所以天然会抵触“砍到只剩最小闭环”这件事。</p>
+            <h3>COO + 商务前台</h3>
+            <p>当前最强的前台控制链。它能给资源，也会把正式纪要往“先过一遍、别写太重”的方向拉。</p>
             <dl class="profile-grid">
               <div>
                 <dt>诉求</dt>
-                <dd>上线别太残，别把用户价值砍没了</dd>
+                <dd>保住结果、客户前台和旧部控制力。</dd>
               </div>
               <div>
                 <dt>态度</dt>
-                <dd>愿意推进，但对大幅收口有抵触</dd>
+                <dd>要你稳交付，但不希望你把敏感事实写得过硬。</dd>
               </div>
               <div>
                 <dt>影响力</dt>
-                <dd>中</dd>
+                <dd>高</dd>
               </div>
               <div>
                 <dt>关系</dt>
-                <dd>与技术持续拉扯</dd>
+                <dd>必须合作，但绝不能绑定。</dd>
               </div>
             </dl>
           </article>
           <article class="profile-card">
-            <h3>技术负责人</h3>
-            <p>负责交付稳定性和节奏，对无限加项天然警惕，所以经常被误解成“只会拦”。</p>
+            <h3>CFO 机制线</h3>
+            <p>当前最值得争取的不是“人情保护”，而是它愿意默许统一纪要、统一确认和可回溯机制慢慢站住。</p>
             <dl class="profile-grid">
               <div>
                 <dt>诉求</dt>
-                <dd>控制返工，保证能按时交付</dd>
+                <dd>把责任链、预算链、合同链和资料边界拉回正式体系。</dd>
               </div>
               <div>
                 <dt>依赖</dt>
-                <dd>依赖创始人给出明确取舍</dd>
+                <dd>更多事实、更多时点、更多可回溯证据。</dd>
               </div>
               <div>
                 <dt>误解</dt>
-                <dd>常被理解成保守，其实是在替项目守边界</dd>
+                <dd>它不会立刻公开护你，更像借机制把局面慢慢拉直。</dd>
               </div>
               <div>
                 <dt>边界</dt>
-                <dd>没有收口，就不会轻易承诺上线</dd>
+                <dd>只给事实和机制诉求，不做情绪化站队。</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="profile-card">
+            <h3>客户执行层</h3>
+            <p>他们现在最真实的诉求不是谁更有关系，而是会后口径统一、排期可控、演示不要炸。</p>
+            <dl class="profile-grid">
+              <div>
+                <dt>诉求</dt>
+                <dd>统一口径、减少二次解释、稳住里程碑。</dd>
+              </div>
+              <div>
+                <dt>态度</dt>
+                <dd>大概率欢迎唯一正式会后纪要出口。</dd>
+              </div>
+              <div>
+                <dt>影响力</dt>
+                <dd>中高</dd>
+              </div>
+              <div>
+                <dt>关系</dt>
+                <dd>可争取，先拿执行层信任，不急着抢总接口名义。</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="profile-card">
+            <h3>技术首席 / 事实持有者</h3>
+            <p>技术线掌握底层风险、资料异常和演示真实性，是把“交付背锅论”掰回事实链的重要节点。</p>
+            <dl class="profile-grid">
+              <div>
+                <dt>诉求</dt>
+                <dd>不替前台控制链背书，同时保住技术判断的可信度。</dd>
+              </div>
+              <div>
+                <dt>依赖</dt>
+                <dd>不公开站队的合作空间，以及只围绕技术事实的沟通边界。</dd>
+              </div>
+              <div>
+                <dt>误解</dt>
+                <dd>旧关系容易被外界情绪化解读，但并不改变其事实价值。</dd>
+              </div>
+              <div>
+                <dt>边界</dt>
+                <dd>只围绕版本、风险、资料边界和演示稳定合作。</dd>
               </div>
             </dl>
           </article>
@@ -1329,7 +1569,7 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">六 / 时间线</p>
+            <p class="section-index">八 / 时间线</p>
             <h2>时间线模块</h2>
             <p class="section-note">阶段变化明显、事件顺序会影响判断时保留。重点写“它怎样改变局面”，不要只是流水账。</p>
           </div>
@@ -1337,19 +1577,19 @@
         </div>
         <div class="timeline-list">
           <article class="timeline-card">
-            <p class="timeline-meta">第 1 周 / 目标刚定</p>
-            <h3>团队把目标定成“尽快上线 MVP”</h3>
-            <p>当时大家都认同要快，但没有把“什么算 MVP”同步定义清楚，后面的争论种子从这里就埋下了。</p>
+            <p class="timeline-meta">过去 8 个月</p>
+            <h3>纸面一体，实操开始分叉</h3>
+            <p>客户接口、预算动作、人事安排和外部合作开始向正式项目组看不到的小群与旧部链条倾斜，组织从协同不良转向结构松动。</p>
           </article>
           <article class="timeline-card">
-            <p class="timeline-meta">第 2-3 周 / 需求不断加项</p>
-            <h3>产品想把体验讲圆，技术开始担心返工</h3>
-            <p>两边都不是没道理，但因为没有统一上线标准，讨论逐渐从“怎么做”变成“谁来定义什么叫够”。</p>
+            <p class="timeline-meta">3 周前到 1 周前</p>
+            <h3>资料外流与匿名举报把暗流推上台面</h3>
+            <p>测试材料流向非合同链邮箱，匿名举报同时送达 CEO、CFO、HR 和法务，局面从“大家都知道有问题”进入“谁在抢先布局下一阶段”的状态。</p>
           </article>
           <article class="timeline-card">
-            <p class="timeline-meta">第 4 周 / 冲突升级</p>
-            <h3>创始人每次都试图“两边都保”</h3>
-            <p>结果不是冲突被解决，而是冲突被延后。最后人人看起来都在忙，实际没有一条主路线真正收口。</p>
+            <p class="timeline-meta">当前 30 天窗口</p>
+            <h3>统一纪要成为眼前第一战场</h3>
+            <p>CFO 要求留痕，COO 要求先稳交付，客户提醒双接口。现在真正决定后续主动权的，是正式事实出口能不能先站住。</p>
           </article>
         </div>
       </section>
@@ -1357,7 +1597,7 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">七 / 结构拆解</p>
+            <p class="section-index">九 / 结构拆解</p>
             <h2>结构拆解模块</h2>
             <p class="section-note">表层问题和深层问题不同，或需要区分主次问题时保留。它负责补层次，不负责重复核心判断。</p>
           </div>
@@ -1366,15 +1606,15 @@
         <div class="grid grid-3">
           <article class="panel-card">
             <p class="card-label">核心问题</p>
-            <p>不是谁态度不好，而是 MVP 定义和拍板机制都没有收口。</p>
+            <p>谁来定义这个核心项目的正式事实、正式责任和未来承接权，而不是谁在会议室里嗓门更大。</p>
           </article>
           <article class="panel-card">
             <p class="card-label">次级问题</p>
-            <p>会议过长、表达方式冲、任务拆得不够细，这些都会增加成本，但它们不是主入口。</p>
+            <p>绯闻、旧情、嫡系冲突、渠道恋爱线和销售不服气都是真实放大器，但它们不是当前最该先处理的入口。</p>
           </article>
           <article class="panel-card">
             <p class="card-label">暂不优先处理</p>
-            <p>品牌打磨、非核心功能、上线后才能验证的高级体验项，本轮都不该抢入口。</p>
+            <p>没有证据坐实的道德定性、提前公开举报、一次性抢成唯一总接口，这三类动作都不应抢在当前机制动作之前。</p>
           </article>
         </div>
       </section>
@@ -1382,7 +1622,7 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">八 / 路线比较</p>
+            <p class="section-index">十 / 路线比较</p>
             <h2>路线比较模块</h2>
             <p class="section-note">存在两条及以上可行路线时保留。这里负责比较备选，而不是把主路线再重写一遍。</p>
           </div>
@@ -1390,92 +1630,96 @@
         </div>
         <div class="comparison-grid">
           <article class="comparison-card">
-            <h3>继续双线并行</h3>
+            <h3>继续贴靠 COO 线</h3>
             <div class="comparison-list">
               <div class="comparison-line">
                 <strong>适用前提</strong>
-                <p>现金流充裕，且团队能承受继续探索 1 到 2 个月。</p>
+                <p>COO 真能收口双接口、继续给你实权，并愿意在后续风险里替你明确切责。</p>
               </div>
               <div class="comparison-line">
                 <strong>关键动作</strong>
-                <p>同时保留体验完整性和技术稳态目标，边做边调。</p>
+                <p>弱化敏感留痕、顺着前台推进、以短期资源换项目继续往前跑。</p>
               </div>
               <div class="comparison-line">
                 <strong>主要风险</strong>
-                <p>范围继续膨胀，返工越来越多，最后谁都累但还是不上线。</p>
+                <p>一旦审计、客户书面不满或举报坐实，你最容易和非正式控制链一起被归入同一口锅。</p>
               </div>
               <div class="comparison-line">
                 <strong>预期结果</strong>
-                <p>表面看起来很积极，实际上大概率继续原地打转。</p>
+                <p>短期可能少挨打，但中期职业信用和责任边界最脆。</p>
               </div>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>先收口 MVP 再上线</h3>
+            <h3>站正式机制线稳住交付</h3>
             <div class="comparison-list">
               <div class="comparison-line">
                 <strong>适用前提</strong>
-                <p>团队接受先保主闭环，不追求一步到位。</p>
+                <p>你能稳定发统一纪要，CFO 给机制软背书，客户执行层接受唯一正式会后纪要出口。</p>
               </div>
               <div class="comparison-line">
                 <strong>关键动作</strong>
-                <p>冻结范围、定唯一拍板人、做一轮真实用户验证。</p>
+                <p>固化纪要、台账、书面确认与资料边界，把执行层口径慢慢拉回正式出口。</p>
               </div>
               <div class="comparison-line">
                 <strong>主要风险</strong>
-                <p>短期会有人觉得“做得太少”，心理上不舒服。</p>
+                <p>会遭遇软施压、软降级和“不懂政治”的标签，且可能出现试探性削权。</p>
               </div>
               <div class="comparison-line">
                 <strong>预期结果</strong>
-                <p>最快把局面从空转拉回推进，是当前最稳的一条路。</p>
+                <p>最有机会同时守住 30 天项目稳定、个人责任边界和后续留走主动权。</p>
               </div>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>暂停两周先补底层</h3>
+            <h3>边稳项目边准备离开</h3>
             <div class="comparison-list">
               <div class="comparison-line">
                 <strong>适用前提</strong>
-                <p>现有代码或流程已经脆到根本无法承接上线动作。</p>
+                <p>控制点被拿走、纪要持续被架空、客户信任继续下滑，而公司又不愿给到正式保护。</p>
               </div>
               <div class="comparison-line">
                 <strong>关键动作</strong>
-                <p>先补关键基础设施，再恢复交付。</p>
+                <p>继续强留痕、核劳动与期权条款、守客户口碑，同时准备下一份机会和谈判筹码。</p>
               </div>
               <div class="comparison-line">
                 <strong>主要风险</strong>
-                <p>容易变成新的拖延借口，错过市场窗口。</p>
+                <p>时点拿捏不好会损失股权，或被公司提前定义为不稳定因素。</p>
               </div>
               <div class="comparison-line">
                 <strong>预期结果</strong>
-                <p>只有在底层真的撑不住时才成立，不是默认选项。</p>
+                <p>避免掉进“留职削权但责任不减”的坑，争取在更完整的证据和边界下体面转身。</p>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section">
+            <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">九 / 资源与约束</p>
+            <p class="section-index">十一 / 资源与约束</p>
             <h2>资源与约束模块</h2>
-            <p class="section-note">资源配置、承受能力、约束条件会改变路线时保留。</p>
+            <p class="section-note">资源配置、支点、底盘供给与承受能力会改变路线时保留。</p>
           </div>
           <span class="section-chip">按需保留</span>
         </div>
-        <div class="grid grid-3">
+        <div class="grid grid-4">
           <article class="panel-card">
             <p class="card-label">关键资源</p>
-            <p>创始人的拍板权、技术负责人的交付能力、第一批种子用户窗口。</p>
+            <p>项目总协调名义权限、客户执行层对统一口径的现实需求、CFO 的机制软背书、技术线掌握的真实风险信息。</p>
           </article>
           <article class="panel-card">
-            <p class="card-label">当前约束</p>
-            <p>现金流只够 3 个月，团队没有继续无限返工的预算。</p>
+            <p class="card-label">当前支点</p>
+            <p>唯一正式会后纪要出口。它既能稳住执行层，又能把后续责任边界钉到书面上。</p>
+          </article>
+          <article class="panel-card">
+            <p class="card-label">底盘供给</p>
+            <p>4 个月股权归属窗口、在职状态、客户不愿项目炸掉、以及公司对融资故事的强依赖，共同构成短期留场的现实底盘。</p>
           </article>
           <article class="panel-card">
             <p class="card-label">主要风险</p>
-            <p>每多一轮返工，试错窗口和团队士气都会一起被吃掉。</p>
+            <p>如果误把名义职位当成真实控制点，用户会在削权发生后仍背项目责任，这是财务和职业信用的双重损失。</p>
           </article>
         </div>
       </section>
@@ -1483,7 +1727,48 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">十 / 沟通协商</p>
+            <p class="section-index">十二 / 分区推进</p>
+            <h2>分区推进矩阵</h2>
+            <p class="section-note">同一套动作不能对所有对象、区域、团队同步展开时保留。它负责说明哪里先推、哪里先稳、哪里先观察。</p>
+          </div>
+          <span class="section-chip">按需保留</span>
+        </div>
+        <div class="grid grid-4">
+          <article class="panel-card">
+            <h3>客户执行层</h3>
+            <p><strong>当前状态：</strong>稳定区</p>
+            <p><strong>适用动作：</strong>每次会后 24 小时内发统一纪要，默认把排期和执行落点收回正式口径。</p>
+            <p><strong>节奏安排：</strong>快，连续跑两到三轮。</p>
+            <p><strong>风险边界：</strong>不抢唯一总接口名义，只抢唯一正式会后落点。</p>
+          </article>
+          <article class="panel-card">
+            <h3>CFO 机制线</h3>
+            <p><strong>当前状态：</strong>过渡区</p>
+            <p><strong>适用动作：</strong>扩大抄送、单列待确认事项、把口头指令回写成书面。</p>
+            <p><strong>节奏安排：</strong>稳，周度持续加固。</p>
+            <p><strong>风险边界：</strong>不要逼对方过早公开站队，只要机制默认接受即可。</p>
+          </article>
+          <article class="panel-card">
+            <h3>COO / 商务前台</h3>
+            <p><strong>当前状态：</strong>高敏区</p>
+            <p><strong>适用动作：</strong>接受措辞建议，但不接受先审批后发送；只谈客户稳定和会后口径一致。</p>
+            <p><strong>节奏安排：</strong>中，先发后补，不先争输赢。</p>
+            <p><strong>风险边界：</strong>不进入道德审判，也不把事实出口交给对方筛选。</p>
+          </article>
+          <article class="panel-card">
+            <h3>外部壳 / 非合同链</h3>
+            <p><strong>当前状态：</strong>高风险区</p>
+            <p><strong>适用动作：</strong>立即收紧资料边界、外发范围和群成员权限，所有异常流转都记入事实台账。</p>
+            <p><strong>节奏安排：</strong>快，立刻收边。</p>
+            <p><strong>风险边界：</strong>未坐实前不公开定性，但一旦再次出现资料外发，就必须升级处理。</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-index">十三 / 沟通协商</p>
             <h2>沟通与协商模块</h2>
             <p class="section-note">关键突破点在表达对象、说法设计和时机安排时保留。</p>
           </div>
@@ -1492,11 +1777,11 @@
         <div class="grid grid-2">
           <article class="panel-card">
             <p class="card-label">沟通对象与目标</p>
-            <p>对创始人：只保一个目标；对产品和技术：统一上线标准；对全员：本周不再反复开题。</p>
+            <p>对 CFO，只争机制默许；对 COO，只讲客户稳定和效率；对客户执行层，只讲会后统一纪要出口，不争名义总接口。</p>
           </article>
           <article class="panel-card">
             <p class="card-label">核心信息与时机</p>
-            <p>会前发需求三分层简表；会上只做取舍，不做脑暴；会后当场定稿，不给“回去再想想”留口子。</p>
+            <p>所有会后纪要在 24 小时内发出。内部反弹时只接措辞建议，不接“先给我看再发”；客户新增需求必须先确认影响，再进入排期。</p>
           </article>
         </div>
       </section>
@@ -1504,7 +1789,61 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">十一 / 执行计划</p>
+            <p class="section-index">十四 / 程序检查</p>
+            <h2>谈判底线 / 程序检查表</h2>
+            <p class="section-note">判断依赖条款、程序、授权、留痕时保留。它负责把底线和程序检查写清，不重复证据链模块。</p>
+          </div>
+          <span class="section-chip">按需保留</span>
+        </div>
+        <div class="report-table-shell">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th>检查项</th>
+                <th>当前状态</th>
+                <th>底线要求</th>
+                <th>当前缺口</th>
+                <th>触发升级 / 止损信号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>统一纪要发送权</td>
+                <td>名义已确认，实操受软施压</td>
+                <td>纪要可由用户直接发出并稳定抄送核心干系人</td>
+                <td>COO 商务线可能要求先审批、缩抄送、软化待确认项</td>
+                <td>一旦出现“以后先给我看再发”或要求取消待确认栏，就必须提级处理</td>
+              </tr>
+              <tr>
+                <td>变更确认与口头指令回写</td>
+                <td>未闭合</td>
+                <td>所有新增需求和临时指令 24 小时内形成书面确认</td>
+                <td>仍存在小群先定、正式纪要后补的习惯</td>
+                <td>若再次要求把“待确认”改成“已同步”，说明程序正在被硬掏空</td>
+              </tr>
+              <tr>
+                <td>岗位与责任同步书面化</td>
+                <td>高风险未确认</td>
+                <td>任何削权或调岗都必须同步改责、改考核、改接口</td>
+                <td>合同允许宽泛业务调整，最容易出现留职削权但责任不减</td>
+                <td>一旦控制点被收走、项目责任却仍挂在用户身上，就应把离场准备切成主线</td>
+              </tr>
+              <tr>
+                <td>资料外发与非合同链边界</td>
+                <td>已被突破</td>
+                <td>核心材料不得流向个人邮箱、外部壳和非合同链顾问</td>
+                <td>已有测试资料经个人邮箱转向外部顾问的前例</td>
+                <td>再次出现外发、删记录、倒签或补签要求时，必须升级到审计和法务层面</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+            <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-index">十五 / 执行计划</p>
             <h2>执行计划模块</h2>
             <p class="section-note">重点在推进落地、安排节奏和反馈调整时保留。它负责拉长节奏，不重复“下一步行动区”。</p>
           </div>
@@ -1513,15 +1852,15 @@
         <div class="grid grid-3">
           <article class="panel-card">
             <p class="card-label">24 小时</p>
-            <p>完成范围三分层、唯一拍板人确认，并把上线标准写成一页纸。</p>
+            <p>发出第一版统一纪要，建立决策、变更、风险三本台账，把最近所有关键口头指令逐条回写。</p>
           </article>
           <article class="panel-card">
             <p class="card-label">7 天</p>
-            <p>做出最小闭环版本，锁住需求变更，跑一轮真实用户试用，看有没有人愿意继续用或付费。</p>
+            <p>连续跑两到三轮纪要，冻结省级演示最小闭环，清点资料外发范围和群成员边界，看谁在试图软性去齿。</p>
           </article>
           <article class="panel-card">
             <p class="card-label">30 天</p>
-            <p>根据用户反馈和付费信号，决定是继续扩功能，还是继续压缩路线，不再靠内部好恶拍脑袋。</p>
+            <p>根据纪要是否成为默认执行落点，判断继续留在机制线、升级离场准备，还是等待演示后再做更大决策。</p>
           </article>
         </div>
       </section>
@@ -1529,7 +1868,56 @@
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="section-index">十二 / 方法出处</p>
+            <p class="section-index">十六 / 换挡对照</p>
+            <h2>组织换挡 / 接管前后对照表</h2>
+            <p class="section-note">重点在组织换挡、承接、接管、新旧系统转换时保留。它负责把前后差异写清，不重复控制点表。</p>
+          </div>
+          <span class="section-chip">按需保留</span>
+        </div>
+        <div class="report-table-shell">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th>维度</th>
+                <th>换挡前 / 接管前</th>
+                <th>换挡后 / 接管后</th>
+                <th>当前风险</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>目标</td>
+                <td>拿下项目、稳住交付</td>
+                <td>既稳项目，又守住正式责任链和未来选择权</td>
+                <td>如果仍只谈结果不谈责任，交付会先变成缓冲层</td>
+              </tr>
+              <tr>
+                <td>规则 / 流程</td>
+                <td>周会与流程系统理论上统一</td>
+                <td>小群先定、纪要后补，必须改回统一纪要加书面确认</td>
+                <td>责任与事实继续分离，客户会更早感知“两套系统”</td>
+              </tr>
+              <tr>
+                <td>角色 / 控制点</td>
+                <td>交付协调、商务配合、技术承接</td>
+                <td>商务前台化、交付兜底化、CFO 机制化，必须重新切边界</td>
+                <td>用户最容易进入留职削权但责任不减的状态</td>
+              </tr>
+              <tr>
+                <td>推进节奏</td>
+                <td>按正常里程碑推进</td>
+                <td>6 周演示倒计时加 30 天观察闸门并行</td>
+                <td>一旦客户把不满转成书面，局面会快速进入公开摊牌</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-index">十七 / 方法出处</p>
             <h2>方法出处模块</h2>
             <p class="section-note">这块只列来源，不再重讲正文。保留为轻量参考文献式列示，避免过于笨重。</p>
           </div>
@@ -1538,14 +1926,26 @@
         <ol class="citation-list">
           <li class="citation-item">
             <div>
-              <h3>《实践论》</h3>
-              <p>用于提醒判断必须回到真实约束和真实反馈，而不是停留在内部想象。</p>
+              <h3>《关于领导方法的若干问题》</h3>
+              <p>对应“统一纪要不是通报，而是把一般号召压成正式事实出口”的方法来源。</p>
             </div>
           </li>
           <li class="citation-item">
             <div>
-              <h3>《矛盾论》</h3>
-              <p>用于判断当前主导问题不是情绪冲突，而是范围、主责和阶段判断同时失焦。</p>
+              <h3>《党委会的工作方法》</h3>
+              <p>对应在多人、多线、多派系里先抓中心点、分清主次、把会后责任和口径写清楚。</p>
+            </div>
+          </li>
+          <li class="citation-item">
+            <div>
+              <h3>《统一战线中的独立自主问题》</h3>
+              <p>对应与 COO 线、CFO 线、客户侧都保持合作，但不把自己的判断和组织边界交出去。</p>
+            </div>
+          </li>
+          <li class="citation-item">
+            <div>
+              <h3>《在中国共产党第七届中央委员会第二次全体会议上的报告》</h3>
+              <p>对应“转段期、接管前夜、谁先拿住事实与程序，谁就有下一阶段主动权”的阶段判断方法。</p>
             </div>
           </li>
         </ol>
@@ -1553,7 +1953,7 @@
     </div>
 
     <footer class="closing">
-      <p><strong>说明：</strong> 这是一份示例成品，不是模板本身。它的作用是让人一眼看见：这类 skill 最后真的会落成一份能看、能讲、能分享的 HTML 报告。</p>
+      <p><strong>结论压缩：</strong> 这局现在最值得抢的不是名义总接口，而是正式事实出口。只要事实出口还在，项目就还有机会收口，用户也还有留、转、走的主动权；一旦出口丢了，而责任还留在用户身上，最危险的“留职削权背锅”就会成为现实。</p>
     </footer>
   </main>
 
@@ -1567,7 +1967,7 @@
       <button class="dialog-close" id="graph-dialog-close" type="button" aria-label="关闭关系详情">×</button>
     </div>
     <div class="dialog-body">
-      <p class="dialog-summary" id="graph-dialog-summary">这里会显示该节点或该关系在局面中的含义。</p>
+      <p class="dialog-summary" id="graph-dialog-summary">这里会显示该节点或该关系在当前局面中的作用。</p>
       <ul class="dialog-points" id="graph-dialog-points"></ul>
     </div>
   </section>
@@ -1638,3 +2038,6 @@
   </script>
 </body>
 </html>
+
+
+

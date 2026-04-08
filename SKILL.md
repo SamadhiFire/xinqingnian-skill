@@ -92,17 +92,20 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 
 陌生用户不需要把整个 `references/` 一次读完。推荐顺序是：
 
-1. 先读 [problem-taxonomy.md](./references/categories/problem-taxonomy.md)，知道这个问题属于哪类主领域、复杂度大概在哪一层。
-2. 再读 [scene-index.md](./references/scenarios/scene-index.md)，快速判断应该先从哪个现实场景入口进入。
-3. 然后读 [method-index.md](./references/methods/method-index.md)，只选当前最早缺失的一张方法卡起手。
-4. 如果输入不清楚，再回到 `clarification/`。
-5. 如果命中误用或翻译风险，再进入 `risks/`。
-6. 如果准备正式输出，再看 `routing/` 决定如何交付。
-7. 只有在用户要 `HTML` 时，才进入 `html-output/`。
+1. 先读 [ambiguity-gate.md](./references/clarification/ambiguity-gate.md)，判断现在能不能直接分析，还是必须先澄清。
+2. 如果要澄清，再读 [intake-flow.md](./references/clarification/intake-flow.md)；如果问题偏长、偏复杂或多问并行，再补读 [focus-anchor.md](./references/clarification/focus-anchor.md)。
+3. 澄清基本闭合后，读 [problem-restatement.md](./references/clarification/problem-restatement.md)，先把题目收束成稳定版本。
+4. 再读 [problem-taxonomy.md](./references/categories/problem-taxonomy.md)，知道这个问题属于哪类主领域、复杂度大概在哪一层。
+5. 再读 [scene-index.md](./references/scenarios/scene-index.md)，快速判断应该先从哪个现实场景入口进入。
+6. 然后读 [method-index.md](./references/methods/method-index.md)，只选当前最早缺失的一张方法卡起手。
+7. 如果命中误用或翻译风险，再进入 [misuse-boundaries.md](./references/risks/misuse-boundaries.md) 和 [translation-red-lines.md](./references/risks/translation-red-lines.md)。
+8. 如果拿不准分类、方法、风险或输出形式，再看 [confidence-rules.md](./references/routing/confidence-rules.md)。
+9. 如果准备正式输出，再看 [output-mode-routing.md](./references/routing/output-mode-routing.md) 决定如何交付。
+10. 只有在用户要 `HTML` 时，才进入 [visual-report-spec.md](./references/html-output/visual-report-spec.md)、[report-build-rules.md](./references/html-output/report-build-rules.md) 和 [visual-report-template.html](./references/html-output/visual-report-template.html)。
 
 一句话理解：
 
-- 先分清问题是什么。
+- 先判断现在能不能直接分析，不行就先澄清。
 - 再决定从哪个场景进入。
 - 再决定先用哪张方法卡。
 - 最后才决定怎么输出。
@@ -114,23 +117,23 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 - `references/categories/`
   用来做问题分类，先判断主领域、方法标签和复杂度。
 - `references/clarification/`
-  用来判断是否需要澄清、该怎么问、如何把问题重述成可分析版本；复杂长问题还要用 `focus-anchor.md` 固定主问题，防止后面分析漂移。
+  用来判断是否需要澄清、该怎么问、如何把问题重述成可分析版本；复杂长问题还要用 [focus-anchor.md](./references/clarification/focus-anchor.md) 先固定 `主问题锚点 / 原始问题对照 / 案件工作单 / 轮次日志`，防止后面分析漂移。
 - `references/scenarios/`
   用来决定从哪个现实场景入口进入，例如工作推进、关系边界、学习成长、团队治理。
 - `references/methods/`
   这是主干内容，用来决定当前最该调用哪张方法卡，以及后面通常接哪张卡。
 - `references/risks/`
-  用来防误用、防翻坏，不是默认第一入口，只在需要时进入。
+  用来防误用、防翻坏，不是默认第一入口，只在需要时进入；风险入口优先看 [misuse-boundaries.md](./references/risks/misuse-boundaries.md) 和 [translation-red-lines.md](./references/risks/translation-red-lines.md)。
 - `references/routing/`
-  用来处理“拿不准怎么办”和“正式输出前如何确认交付形式”。
+  用来处理“拿不准怎么办”和“正式输出前如何确认交付形式”；核心是 [confidence-rules.md](./references/routing/confidence-rules.md) 和 [output-mode-routing.md](./references/routing/output-mode-routing.md)。
 - `references/html-output/`
-  只在用户选择 `HTML 报告` 时使用；先读 `visual-report-spec.md`，再读 `report-build-rules.md`，最后复用 `visual-report-template.html` 生成最终单文件 HTML。
+  只在用户选择 `HTML 报告` 时使用；先读 [visual-report-spec.md](./references/html-output/visual-report-spec.md)，再读 [report-build-rules.md](./references/html-output/report-build-rules.md)，最后复用 [visual-report-template.html](./references/html-output/visual-report-template.html) 生成最终单文件 HTML。
 
 ## 标准工作流
 
 这个 skill 的完整工作流，不是“看到问题就套方法”，而是下面这条链：
 
-`触发判断 -> 模糊性判断 -> 必要澄清 -> 主问题锚点 -> 问题重述 -> 分类 -> 场景入口 -> 方法链 -> 风险检查 -> 完成内容判断 -> 询问用户要文字版还是 HTML 版 -> 正式输出`
+`触发判断 -> 模糊性判断 -> 必要澄清 -> 主问题锚点 -> 原始问题对照 -> 案件工作单 -> 问题重述 -> 分类 -> 场景入口 -> 方法链 -> 风险检查 -> 完成内容判断 -> 输出前答题校验 -> 询问用户要文字版还是 HTML 版 -> 正式输出`
 
 下面按顺序说明。
 
@@ -147,7 +150,7 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 ### 2. 需要澄清时，怎么问
 
 先看 [intake-flow.md](./references/clarification/intake-flow.md)，再按需看 [question-packs-by-domain.md](./references/clarification/question-packs-by-domain.md)。  
-如果问题已经明显偏长、偏复杂、用户一次问了多个问题，或已经进入第二轮澄清，再看 [focus-anchor.md](./references/clarification/focus-anchor.md)。
+如果问题已经明显偏长、偏复杂、用户一次问了多个问题，或已经进入第二轮澄清，就必须看 [focus-anchor.md](./references/clarification/focus-anchor.md)。
 
 澄清时只做一件事：
 
@@ -166,13 +169,16 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 不要为了显得认真而无限追问，也不要把分场景追问包整包问完。
 
 复杂长问题里，光追问还不够。  
-要先用 `focus-anchor.md` 固定：
+要先用 [focus-anchor.md](./references/clarification/focus-anchor.md) 固定：
 
 - 这次真正要解决的主问题是什么
+- 用户原始问题清单是什么
 - 本轮只优先回答哪 `1` 到 `2` 个问题
+- 分析底稿里的关键字段现在分别是什么
 - 哪些内容暂不展开
 
 否则很容易一边问一边扩题，最后分析对象漂移。
+对长问题来说，不要靠“脑中记住大意”继续走，而要先写出 `主问题锚点 / 原始问题对照 / 案件工作单`。
 
 ### 3. 澄清后，先做问题重述
 
@@ -180,6 +186,7 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 
 问题重述的作用，是把用户原始叙述收束成一个可分析版本，避免后面一边分析一边改题。
 如果问题属于复杂长问题，问题重述前应先完成 `主问题锚点`，否则只有重述没有锚点，后续长文里仍可能丢失用户最初的关键问题。
+如果问题属于长问题或多问并行问题，问题重述还应优先根据 `案件工作单` 来写，而不是重新在原始长文里漫游一遍。
 
 ### 4. 正式分析前，先做分类
 
@@ -245,6 +252,7 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 
 - 问题已经怎么重述
 - 主问题锚点是什么
+- 原始问题对照和案件工作单是否已经稳定
 - 当前核心判断是什么
 - 该调用哪些方法
 - 风险边界在哪里
@@ -257,6 +265,7 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 只有在澄清已经闭合后，才进入这一步。
 
 如果当前仍有关键人物没展开、关键事件链没对齐、共同决策/信息/资源是否分叉还不清楚，先不要问用户要 `深度分析` 还是 `HTML 报告`。这时正确动作是继续澄清，或先给出“目前已确认的结构 + 仍待确认的关键缺口”。
+如果 `原始问题对照` 还没冻结，或 `案件工作单` 还写不稳，也同样不要进入这一步。
 
 如果用户已经提过 `HTML`，这时还要额外做一句清晰的预期管理，直接说明：
 
@@ -278,6 +287,7 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 - 如果用户之前已经明确说过要 `HTML`，这一轮就视为已确认
 
 这里的关键不是内容变一套，而是呈现形式变一套。
+对长问题来说，在这一步之前还要过一次 `输出前答题校验`，确认没有漏题、串题或把传闻写成定论。
 
 ### 11. 深度分析和 HTML 报告，共用同一套内容骨架
 
@@ -309,6 +319,11 @@ description: 当用户希望用《毛泽东选集》/教员的方法分析现实
 2. [report-build-rules.md](./references/html-output/report-build-rules.md)
 3. [visual-report-template.html](./references/html-output/visual-report-template.html)
 
+可直接参考两个现成示例：
+
+- [sample-project-report.html](./examples/sample-project-report.html)
+- [sample-org-fork-case.md](./examples/sample-org-fork-case.md) 和 [sample-org-fork-case-report.html](./examples/sample-org-fork-case-report.html)
+
 HTML 输出要求如下：
 
 - 最终 HTML 以自包含为目标，方便直接打开、保存和分享。
@@ -316,6 +331,7 @@ HTML 输出要求如下：
 - 具体占位填充、模块删改、关系图数据填写、编号重排规则，以 [report-build-rules.md](./references/html-output/report-build-rules.md) 为准。
 - 非用户明确要求改风格，不要重写模板的 `:root` 视觉变量、主体 class 命名、响应式布局、关系图 SVG 壳子、弹层交互 JS。
 - 可以在不破坏模板视觉系统和交互结构的前提下做局部内容调整，但不要把模板改成另一套完全不同的页面骨架。
+- 如果报告正文是中文，封面标识、区块编号、模块标题、表头、按钮、提示语等用户可见层文案也必须默认中文化；不要把模板里的英文壳层标签直接保留下来。
 - 如果用户没有指定路径或文件名，默认在用户当前工作目录（通常就是当前打开的文件夹）生成 `YYYY-MM-DD-topic.html`。
 - 如果用户明确指定了输出目录或文件名，按用户指定路径输出。
 - HTML 不是另一套内容体系，而是同一内容骨架的可视化呈现。
@@ -358,6 +374,7 @@ HTML 输出要求如下：
 - 一次分析通常只需要 `1` 个主场景入口和 `1` 到 `3` 张方法卡。
 - 不把高压语言下沉到轻问题，不把复杂方法套进普通摩擦。
 - 复杂问题优先输出结构，不急着抢结论。
+- 复杂长问题先把主问题和原始问题清单外部化，不相信模型会自然记住。
 - 如果复杂性主要来自人物、事项、组织之间的关联，HTML 应优先考虑关系图模块，而不是只堆文字说明。
 
 - 任何时候都保留边界意识，避免把方法论误用成控制、羞辱、操纵或清洗。
@@ -366,6 +383,6 @@ HTML 输出要求如下：
 
 如果只记住一条，就记住这条：
 
-- 先把问题看清，再选场景，再选方法，再查风险，最后在正式输出前问用户要文字版还是 HTML 版。
+- 先把问题看清；长问题先固定主问题、问题清单和分析底稿；再选场景、方法和风险入口；最后在正式输出前确认用户要文字版还是 HTML 版。
 
 
