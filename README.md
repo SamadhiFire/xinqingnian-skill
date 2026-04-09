@@ -43,6 +43,7 @@
 
 | 日期 | 版本 | 修改说明 |
 | --- | --- | --- |
+| 2026-04-08 | v0.1.0 | 整体架构与方法论搭建 |
 | 2026-04-08 | v0.2.0 | 强化澄清门槛与选项追问 |
 | 2026-04-09 | v0.3.0 | 改为目标优先与复杂题默认 |
 
@@ -257,6 +258,7 @@ flowchart LR
 
 - 复杂组织分叉案例输入：[`examples/组织分叉案例输入.md`](./examples/组织分叉案例输入.md)
 - 复杂组织分叉案例：[`examples/组织分叉案例报告.html`](./examples/组织分叉案例报告.html)
+- 验收样例集：[`examples/验收样例集.md`](./examples/验收样例集.md)
 
 #### 示例报告预览
 
@@ -381,8 +383,10 @@ maozedong-maoxuan-skill/
 ├── agents/
 │   └── openai.yaml                        # Codex skill UI 元数据
 ├── examples/
+│   ├── 验收样例集.md                    # 首轮/追测验收样例
 │   ├── 组织分叉案例输入.md                # 输入样例
 │   ├── 组织分叉案例报告.html              # HTML 报告样例
+│   ├── 模糊输入首轮澄清示例.md            # 首轮澄清示例
 │   └── screenshots/                       # README 预览截图
 ├── references/
 │   ├── categories/                        # 问题分类
