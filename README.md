@@ -45,7 +45,7 @@
 
 <p>
   <a href="https://samadhifire.github.io/xinqingnian-skill/examples/%E7%BB%84%E7%BB%87%E5%88%86%E5%8F%89%E6%A1%88%E4%BE%8B%E6%8A%A5%E5%91%8A.html">
-    <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8B-%E7%A4%BA%E4%BE%8B%E6%8A%A5%E5%91%8A-b81611?style=for-the-badge&logo=googlechrome&logoColor=white" alt="在线查看示例报告">
+    <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8B-%E7%A4%BA%E4%BE%8B%E6%8A%A5%E5%91%8A-b81611?style=for-the-badge&labelColor=c99745&logo=googlechrome&logoColor=white" alt="在线查看示例报告">
   </a>
 </p>
 
@@ -280,7 +280,7 @@ flowchart LR
 <p>
   <strong>复杂组织分叉案例：</strong>
   <a href="https://samadhifire.github.io/xinqingnian-skill/examples/%E7%BB%84%E7%BB%87%E5%88%86%E5%8F%89%E6%A1%88%E4%BE%8B%E6%8A%A5%E5%91%8A.html">
-    <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8B-%E7%A4%BA%E4%BE%8B%E6%8A%A5%E5%91%8A-b81611?style=for-the-badge&logo=googlechrome&logoColor=white" alt="在线查看示例报告">
+    <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8B-%E7%A4%BA%E4%BE%8B%E6%8A%A5%E5%91%8A-b81611?style=for-the-badge&labelColor=c99745&logo=googlechrome&logoColor=white" alt="在线查看示例报告">
   </a>
 </p>
 
