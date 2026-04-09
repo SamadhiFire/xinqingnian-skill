@@ -4,7 +4,7 @@
 
 <p><em>“最近大家都在蒸馏各种 skill。但，蒸馏的最终目的，是要<strong>能够解决问题！</strong>”</em></p>
 
-<p><em><strong>新青年来中国是能解决问题，会解决问题的！</strong>”</em></p>
+<p><em><strong>新青年来中国是能解决问题，会解决问题的！</strong></em></p>
 
 <p>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
@@ -30,7 +30,7 @@
 
 <br>
 
-<p><em>本名叫“毛选拆局.Skill”，因名字太过敏感，现改为“新青年.Skill”</em></p>
+<p><em>原名叫“毛选拆局.Skill”，因名字太过敏感，现改为“新青年.Skill”</em></p>
 
 <br>
 
