@@ -129,7 +129,7 @@ flowchart LR
 
 **先把题目看对，再把局面拆开，最后才谈怎么动手。**
 
-## 适用场景
+## 他的适用场景
 
 它更适合这类“表面像摩擦，底层其实是结构问题”的局面：
 
@@ -187,7 +187,7 @@ flowchart LR
 **越像“结构题”，越适合用它来拆。**
 
 
-## 使用
+## 他的使用方式
 
 ### 最简单的触发方式
 
@@ -234,7 +234,7 @@ flowchart LR
 先别急着下结论，如果信息不够请先追问我。最后帮我输出一份HTML报告。”。
 ```
 
-## 输出结果
+## 他的输出结果
 
 ### 1. 文字版深度分析
 
@@ -333,7 +333,7 @@ flowchart LR
 </p>
 
 
-## 边界
+## 他不适合谁
 
 这个 skill 不适合下面几种用法：
 
@@ -347,7 +347,7 @@ flowchart LR
 
 **别把方法论玩成气势道具。**
 
-## 安装
+## 他的安装方式
 
 ### Claude Code
 
@@ -374,7 +374,7 @@ git clone https://github.com/SamadhiFire/xinqingnian-skill.git ~/.codex/skills/x
 
 不是每个平台都叫 skill，但大多数 agent 平台都支持“自定义系统提示词 / 自定义技能目录 / 项目级规则”。
 
-最省事的用法：
+最省事的用法（大部分平台都很聪明了）：
 
 **霸气地告诉你的Agent！：**
 
@@ -385,7 +385,7 @@ https://github.com/SamadhiFire/xinqingnian-skill
 按 README 进行安装；如果当前平台不支持 skill，就转换成自定义规则。
 ```
 
-## 仓库结构
+## 他的仓库结构
 
 ```text
 xinqingnian-skill/
@@ -415,7 +415,7 @@ xinqingnian-skill/
 ```
 
 
-## 最后一句
+## 他想说的最后一句
 
 这不是教你背《毛选》。
 
