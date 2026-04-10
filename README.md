@@ -1,6 +1,6 @@
 <div align="center">
 
-<p><img src="./examples/screenshots/ChatGPT%20Image%202026%E5%B9%B44%E6%9C%889%E6%97%A5%2023_34_06.png" alt="新青年.skill" width="560"></p>
+<p><img src="./examples/screenshots/ChatGPT%20Image%202026%E5%B9%B44%E6%9C%889%E6%97%A5%2023_34_06.png" alt="新青年.skill" width="560"></p>.Skill
 
 <p><em>“最近大家都在蒸馏各种 skill。但，蒸馏的最终目的，是要<strong>能够解决问题！</strong>”</em></p>
 
