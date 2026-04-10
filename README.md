@@ -30,8 +30,7 @@
 
 <br>
 
-<p><em>原<strong>“毛选拆局.Skill”<strong>，因名字太过敏感，现更名为为“新青年.Skill”</em></p>
-
+<p><em>原“<strong>毛选拆局.Skill</strong>”，因名字太过敏感，现更名为“新青年.Skill”</em></p>
 <br>
 
 <p>
