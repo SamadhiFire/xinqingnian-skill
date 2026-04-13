@@ -43,7 +43,7 @@
 </p>
 
 <p>
-  <a href="https://samadhifire.github.io/xinqingnian-skill/examples/%E7%BB%84%E7%BB%87%E5%88%86%E5%8F%89%E6%A1%88%E4%BE%8B%E6%8A%A5%E5%91%8A.html">
+  <a href="https://samadhifire.github.io/xinqingnian-maoxuan-skill/examples/%E7%BB%84%E7%BB%87%E5%88%86%E5%8F%89%E6%A1%88%E4%BE%8B%E6%8A%A5%E5%91%8A.html">
     <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8B-%E7%A4%BA%E4%BE%8B%E6%8A%A5%E5%91%8A-b81611?style=for-the-badge&labelColor=c99745&logo=googlechrome&logoColor=white" alt="在线查看示例报告">
   </a>
 </p>
@@ -267,7 +267,7 @@ flowchart LR
 #### 示例报告完整版
 <p>
   <strong>复杂组织分叉案例：</strong>
-  <a href="https://samadhifire.github.io/xinqingnian-skill/examples/%E7%BB%84%E7%BB%87%E5%88%86%E5%8F%89%E6%A1%88%E4%BE%8B%E6%8A%A5%E5%91%8A.html">
+  <a href="https://samadhifire.github.io/xinqingnian-maoxuan-skill/examples/%E7%BB%84%E7%BB%87%E5%88%86%E5%8F%89%E6%A1%88%E4%BE%8B%E6%8A%A5%E5%91%8A.html">
     <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8B-%E7%A4%BA%E4%BE%8B%E6%8A%A5%E5%91%8A-b81611?style=for-the-badge&labelColor=c99745&logo=googlechrome&logoColor=white" alt="在线查看示例报告">
   </a>
 </p>
@@ -354,10 +354,10 @@ Claude Code 会从项目里的 `.claude/skills/`，或全局的 `~/.claude/skill
 ```bash
 # 安装到当前项目（在你的项目根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/SamadhiFire/xinqingnian-skill.git .claude/skills/xinqingnian-skill
+git clone https://github.com/SamadhiFire/xinqingnian-maoxuan-skill.git .claude/skills/xinqingnian-maoxuan-skill
 
 # 或安装到全局（所有项目都能用）
-git clone https://github.com/SamadhiFire/xinqingnian-skill.git ~/.claude/skills/xinqingnian-skill
+git clone https://github.com/SamadhiFire/xinqingnian-maoxuan-skill.git ~/.claude/skills/xinqingnian-maoxuan-skill
 ```
 
 ### Codex
@@ -365,7 +365,7 @@ git clone https://github.com/SamadhiFire/xinqingnian-skill.git ~/.claude/skills/
 如果你在用 Codex，一般放进 `$CODEX_HOME/skills/` 或 `~/.codex/skills/` 即可。
 
 ```bash
-git clone https://github.com/SamadhiFire/xinqingnian-skill.git ~/.codex/skills/xinqingnian-skill
+git clone https://github.com/SamadhiFire/xinqingnian-maoxuan-skill.git ~/.codex/skills/xinqingnian-maoxuan-skill
 ```
 
 ### 其他平台
@@ -378,7 +378,7 @@ git clone https://github.com/SamadhiFire/xinqingnian-skill.git ~/.codex/skills/x
 
 ```bash
 请帮我接入这个 skill：
-https://github.com/SamadhiFire/xinqingnian-skill
+https://github.com/SamadhiFire/xinqingnian-maoxuan-skill
 
 按 README 进行安装；如果当前平台不支持 skill，就转换成自定义规则。
 ```
@@ -386,7 +386,7 @@ https://github.com/SamadhiFire/xinqingnian-skill
 ## 仓库结构
 
 ```text
-xinqingnian-skill/
+xinqingnian-maoxuan-skill/
 ├── .editorconfig                          # UTF-8 / LF 编辑器约束
 ├── .gitattributes                         # Git 行尾规则
 ├── README.md                              # 项目介绍、安装方式、HTML 预览
@@ -426,8 +426,8 @@ xinqingnian-skill/
 ## Star History
 
 <p align="center">
-  <a href="https://www.star-history.com/#SamadhiFire/xinqingnian-skill&Date">
-    <img src="https://api.star-history.com/svg?repos=SamadhiFire/xinqingnian-skill&type=Date" alt="Star History Chart">
+  <a href="https://www.star-history.com/#SamadhiFire/xinqingnian-maoxuan-skill&Date">
+    <img src="https://api.star-history.com/svg?repos=SamadhiFire/xinqingnian-maoxuan-skill&type=Date" alt="Star History Chart">
   </a>
 </p>
 
